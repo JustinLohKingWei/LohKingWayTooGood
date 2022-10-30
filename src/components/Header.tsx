@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 const HeaderRoot = styled.div`
-  display: block;
   background-color: cadetblue;
   z-index: 5 ;
+  display: flex ;
+  opacity: 50% ;
 `;
 
 function Header() {

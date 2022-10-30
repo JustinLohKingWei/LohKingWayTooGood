@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 const FooterRoot = styled.div`
-  display: block;
+  display: flex;
   background-color: #142d4c;
   position: fixed;
   bottom: 0px;
   z-index: 5 ;
   width: 100% ;
+  min-height: 10vh ;
 `;
 
 function Footer() {
