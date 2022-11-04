@@ -3,28 +3,33 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Content from "./components/Content";
 import styled from "styled-components";
-import { useState } from "react";
+import React, { createContext, useState } from "react";
 
 const RootContainer = styled.div`
   background-image: linear-gradient(135deg, #f5f7fa 0%, #b8c6db 100%);
-  overflow: hidden ;
+  overflow: hidden;
 `;
+
+export const GlobalContext = createContext<any>(null);
+
+export type globalContextTypes = {
+  content: string;
+  setContent: React.Dispatch<React.SetStateAction<string>>;
+};
 
 function App() {
 
-  enum ContentPages {about='about',experience='experience'}
+  const [content, setContent] = useState("Home");
 
-  const [content,setContent] = useState<ContentPages>(ContentPages.about);
-
-
-
-
+  const globalContextValues: globalContextTypes = {content,setContent};
 
   return (
     <RootContainer>
+      <GlobalContext.Provider value={globalContextValues}>
       <Header />
       <Content />
       <Footer />
+      </GlobalContext.Provider>
     </RootContainer>
   );
 }

@@ -1,4 +1,6 @@
+import { useContext } from "react";
 import styled from "styled-components";
+import { globalContextTypes, GlobalContext } from "../App";
 
 const NavbarRoot = styled.div`
   display: flex;
@@ -28,14 +30,15 @@ const NavbarButton = styled.button`
 `;
 
 function Navbar() {
+  const { setContent }: globalContextTypes = useContext(GlobalContext);
   return (
     <NavbarRoot>
       <NavbarList>
         <NavbarButtonContainer>
-          <NavbarButton>About Me</NavbarButton>
+          <NavbarButton onClick={()=>setContent("about")}>About Me</NavbarButton>
         </NavbarButtonContainer>
         <NavbarButtonContainer>
-          <NavbarButton>Experience</NavbarButton>
+          <NavbarButton onClick={()=>setContent("experience")}>Experience</NavbarButton>
         </NavbarButtonContainer>
         <NavbarButtonContainer>
           <NavbarButton>Cool Stuff I do</NavbarButton>

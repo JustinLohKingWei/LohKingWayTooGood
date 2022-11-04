@@ -25,6 +25,8 @@ const Subtitle = styled.div`
 `;
 
 function Header() {
+
+
   return (
     <HeaderRoot>
       <SplitScreen leftWeight={1} rightWeight={2}>

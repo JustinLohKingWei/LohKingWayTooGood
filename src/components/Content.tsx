@@ -1,4 +1,6 @@
+import { useContext } from "react";
 import styled from "styled-components";
+import { GlobalContext, globalContextTypes } from "../App";
 import Header from "./Header";
 import SplitScreen from "./layout/SplitScreen";
 
@@ -9,7 +11,11 @@ const ContentRoot = styled.div`
 `;
 
 function Content() {
-  return <ContentRoot>Content</ContentRoot>;
+
+  const{content}:globalContextTypes = useContext(GlobalContext)
+
+
+  return <ContentRoot>{content}</ContentRoot>;
 }
 
 export default Content;
