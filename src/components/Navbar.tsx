@@ -35,10 +35,10 @@ function Navbar() {
     <NavbarRoot>
       <NavbarList>
         <NavbarButtonContainer>
-          <NavbarButton onClick={()=>setContent("about")}>About Me</NavbarButton>
+          <NavbarButton onClick={()=>setContent("About")}>About Me</NavbarButton>
         </NavbarButtonContainer>
         <NavbarButtonContainer>
-          <NavbarButton onClick={()=>setContent("experience")}>Experience</NavbarButton>
+          <NavbarButton onClick={()=>setContent("Experience")}>Experience</NavbarButton>
         </NavbarButtonContainer>
         <NavbarButtonContainer>
           <NavbarButton>Cool Stuff I do</NavbarButton>
