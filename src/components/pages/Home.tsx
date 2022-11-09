@@ -8,13 +8,15 @@ const HomeRoot = styled.div`
   min-height: 100%;
 `;
 
-const initialHome = { opacity: 0 };
+const initialHome = { opacity: 0};
 
-const animateHome = { opacity: 1 };
+const animateHome = { opacity: 1};
 
-const transitionHome = { duration: 5 };
+const transitionHome = {duration:1};
 
-const exitHome = { x: -300, opacity: 0 };
+const exitHome = {opacity:0,transition:{
+  duration: 0.5
+}};
 
 function Home() {
   return (

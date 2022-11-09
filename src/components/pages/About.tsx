@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import {  motion } from "framer-motion";
 
 const AboutRoot = styled.div`
   background-color: #6f6c58;
@@ -8,13 +8,15 @@ const AboutRoot = styled.div`
   min-height: 100%;
 `;
 
-const initialAbout = { opacity: 0 };
+const initialAbout = {opacity: 0};
 
-const animateAbout = { opacity: 1 };
+const animateAbout = {opacity: 1 };
 
-const transitionAbout = { duration: 3 };
+const transitionAbout = {duration:1 };
 
-const exitAbout = { opacity: 0 };
+const exitAbout = { opacity: 0,transition:{
+  duration: 0.5
+}};
 
 function About() {
   return (
@@ -25,7 +27,7 @@ function About() {
       exit={exitAbout}
     >
       <AboutRoot>
-        <h1>ABOUT</h1>
+        ABOUT
       </AboutRoot>
     </motion.div>
   );

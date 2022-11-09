@@ -12,9 +12,11 @@ const initialExperience = { opacity: 0 };
 
 const animateExperience = { opacity: 1 };
 
-const transitionExperience = { duration: 3 };
+const transitionExperience = { duration:1};
 
-const exitExperience = { opacity: 0 };
+const exitExperience = { opacity: 0,transition:{
+  duration: 0.5
+}};
 
 function Experience() {
   return (
