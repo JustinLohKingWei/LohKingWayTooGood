@@ -9,13 +9,12 @@ const NavbarRoot = styled.div`
 
 const NavbarList = styled.div`
   display: flex;
-  background-color: black;
-  /* opacity: 30% ; */
   min-width: 70em;
   padding: 0.2em;
   min-height: 2.5em;
-  padding-right: 8em;
-  column-gap: 3em;
+  padding-left: 8em;
+  padding-right: 2em;
+  column-gap: 1em;
   justify-content: flex-end;
 `;
 const NavbarButtonContainer = styled.div`
@@ -44,7 +43,7 @@ function Navbar() {
           <NavbarButton onClick={()=>setContent("Home")}>Cool Stuff I do</NavbarButton>
         </NavbarButtonContainer>
         <NavbarButtonContainer>
-          <NavbarButton>Important People</NavbarButton>
+          <NavbarButton onClick={()=>setContent("People")}>Important People</NavbarButton>
         </NavbarButtonContainer>
       </NavbarList>
     </NavbarRoot>

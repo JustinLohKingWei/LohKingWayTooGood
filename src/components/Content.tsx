@@ -5,6 +5,7 @@ import { GlobalContext, globalContextTypes } from "../App";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
 import Home from "./pages/Home";
+import People from "./pages/People";
 
 const ContentRoot = styled.div`
   display: flex;
@@ -18,13 +19,11 @@ function Content() {
 
   return (
     <ContentRoot>
-      {/* <AnimatePresence>{content === "Home" && <Home />}</AnimatePresence>
-      <AnimatePresence>{content === "About" && <About />}</AnimatePresence>
-      <AnimatePresence >{content === "Experience" && <Experience/>}</AnimatePresence> */}
       <AnimatePresence mode="wait">
         {content === "Home" && <Home key="Home"/>}
         {content === "About" && <About key="About"/>}
         {content === "Experience" && <Experience key="Experience" />}
+        {content === "People" && <People key="People" />}
         </AnimatePresence>
     </ContentRoot>
   );
