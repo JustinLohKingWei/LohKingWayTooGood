@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/LohKingWayTooGood/static/css/main.073c9b0a.css",
-    "main.js": "/LohKingWayTooGood/static/js/main.ae401ecf.js",
+    "main.js": "/LohKingWayTooGood/static/js/main.c7eea930.js",
     "static/js/787.6b8e5322.chunk.js": "/LohKingWayTooGood/static/js/787.6b8e5322.chunk.js",
     "index.html": "/LohKingWayTooGood/index.html",
     "main.073c9b0a.css.map": "/LohKingWayTooGood/static/css/main.073c9b0a.css.map",
-    "main.ae401ecf.js.map": "/LohKingWayTooGood/static/js/main.ae401ecf.js.map",
+    "main.c7eea930.js.map": "/LohKingWayTooGood/static/js/main.c7eea930.js.map",
     "787.6b8e5322.chunk.js.map": "/LohKingWayTooGood/static/js/787.6b8e5322.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.ae401ecf.js"
+    "static/js/main.c7eea930.js"
   ]
 }
