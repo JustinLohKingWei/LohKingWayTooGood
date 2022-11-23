@@ -32,7 +32,7 @@ function Header() {
       <SplitScreen leftWeight={1} rightWeight={2}>
         <>
           <Title>Johnny Sins</Title>
-          <Subtitle>"I Have Many Jobs, One Of Them Was Your Mama"</Subtitle>
+          <Subtitle>"Astronaut, Doctor, Plumber, Firefighter, Pizza Deliveryman</Subtitle>
         </>
         <Navbar/>
       </SplitScreen>
