@@ -3,6 +3,7 @@ import { useContext } from "react";
 import styled from "styled-components";
 import { GlobalContext, globalContextTypes } from "../App";
 import About from "./pages/About";
+import CoolStuff from "./pages/CoolStuff";
 import Experience from "./pages/Experience";
 import Home from "./pages/Home";
 import People from "./pages/People";
@@ -24,6 +25,8 @@ function Content() {
         {content === "About" && <About key="About"/>}
         {content === "Experience" && <Experience key="Experience" />}
         {content === "People" && <People key="People" />}
+        {content === "CoolStuff" && <CoolStuff key="CoolStuff" />}
+        CoolStuff
         </AnimatePresence>
     </ContentRoot>
   );

@@ -40,7 +40,7 @@ function Navbar() {
           <NavbarButton onClick={()=>setContent("Experience")}>Experience</NavbarButton>
         </NavbarButtonContainer>
         <NavbarButtonContainer>
-          <NavbarButton onClick={()=>setContent("Home")}>Cool Stuff I do</NavbarButton>
+          <NavbarButton onClick={()=>setContent("CoolStuff")}>Cool Stuff I do</NavbarButton>
         </NavbarButtonContainer>
         <NavbarButtonContainer>
           <NavbarButton onClick={()=>setContent("People")}>Important People</NavbarButton>
