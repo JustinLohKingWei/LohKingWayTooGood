@@ -33,7 +33,7 @@ function CoolStuff() {
       transition={transitionCoolStuff}
       exit={exitCoolStuff}
     >
-      <CoolStuffRoot>Another deployment test</CoolStuffRoot>
+      <CoolStuffRoot>This Page Is For Cool Stuff</CoolStuffRoot>
     </motion.div>
   );
 }
