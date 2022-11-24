@@ -6,19 +6,28 @@ import List from "../layout/List";
 import SplitScreen from "../layout/SplitScreen";
 
 const PeopleRoot = styled.div`
-  background-color: #0de643;
+  /* background-color: #ffffff; */
   display: flex;
   min-width: 100vw;
   min-height: 100%;
 `;
 
+const PeopleDescriptionContainer = styled.div`
+  max-width: 75vw;
+  padding: 0.5em
+`;
+
 const PeopleDescription = styled.div`
-display : flex;
-max-width: 70vw;
-overflow: auto;
-overflow-block: auto;
-overflow-wrap: break-word ;
-`
+  display: block;
+  overflow: auto;
+  overflow-block: auto;
+  overflow-wrap: break-word;
+  font-size: large;
+  border-width: 0 0 0 0.1em;
+  border-color: black ;
+  border-style: solid;
+  padding: 0.5em
+`;
 
 const initialPeople = {
   opacity: 0,
@@ -55,7 +64,9 @@ function People() {
       <PeopleRoot>
         <SplitScreen leftWeight={1} rightWeight={5}>
           <List peopleList={PeopleList} setcurrentPeople={setCurrentPeople} />
-          <PeopleDescription>{currentPeople.description}</PeopleDescription>
+          <PeopleDescriptionContainer>
+            <PeopleDescription>{currentPeople.description}</PeopleDescription>
+          </PeopleDescriptionContainer>
         </SplitScreen>
       </PeopleRoot>
     </motion.div>
