@@ -13,7 +13,7 @@ const FooterRoot = styled.div`
 function Footer() {
   return (
     <FooterRoot>
-      <h2>Another deployment test</h2>
+      <h2>PLEASE FUCKING WORK WHAT IS YOUR PROBLEM</h2>
     </FooterRoot>
   );
 }
