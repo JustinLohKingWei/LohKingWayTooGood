@@ -1,0 +1,26 @@
+name: Github Pages deploy
+
+on:
+  push:
+    branches:
+      - "master"
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+       node-version: [15.x]
+       
+    steps:
+      - name: Checkout this mofo
+        uses: actions/checkout@v1
+        
+      - name : Install and build this mofo
+        run: yarn install && yarn run build
+        
+      - name: Deploy this mofo
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
