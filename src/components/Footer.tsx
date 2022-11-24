@@ -13,7 +13,7 @@ const FooterRoot = styled.div`
 function Footer() {
   return (
     <FooterRoot>
-      <h2>Footer</h2>
+      <h2>Contact Johnny Sins Today!</h2>
     </FooterRoot>
   );
 }
