@@ -20,8 +20,7 @@ jobs:
       - name : Install and build this mofo
         run: |
               yarn install
-              yarn build
-              yarn deploy
+              yarn run build
         
       - name: Deploy this mofo
         uses: JamesIves/github-pages-deploy-action@v4
