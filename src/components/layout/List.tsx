@@ -17,7 +17,14 @@ const ListItem = styled.div`
   font-size: x-large;
   display: flex;
   justify-content: center;
-  background-color: rgb(0, 0, 0, 0.7);
+  &:hover {
+    background-color: rgb(0, 0, 0, 0.7);
+    color: white;
+  }
+  &:focus-within {
+    outline: none;
+    border-color: red;
+  }
 `;
 
 function List({ peopleList, setcurrentPeople }: ListProps) {

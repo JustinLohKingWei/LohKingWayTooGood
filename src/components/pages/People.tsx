@@ -14,7 +14,7 @@ const PeopleRoot = styled.div`
 
 const PeopleDescriptionContainer = styled.div`
   max-width: 75vw;
-  padding: 0.5em
+  padding: 0.5em;
 `;
 
 const PeopleDescription = styled.div`
@@ -26,7 +26,7 @@ const PeopleDescription = styled.div`
   border-width: 0 0 0 0.1em;
   border-color: black ;
   border-style: solid;
-  padding: 0.5em
+  padding: 0.5em;
 `;
 
 const initialPeople = {

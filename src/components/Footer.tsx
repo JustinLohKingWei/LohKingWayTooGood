@@ -7,13 +7,14 @@ const FooterRoot = styled.div`
   bottom: 0px;
   z-index: 5 ;
   width: 100% ;
-  min-height: 10vh ;
+  min-height: 3vh ;
+  justify-content: center;
 `;
 
 function Footer() {
   return (
     <FooterRoot>
-      <h2>PLEASE FUCKING WORK WHAT IS YOUR PROBLEM</h2>
+      <h4>Made with Typescript, Styled Components & Framer Motion,</h4>
     </FooterRoot>
   );
 }

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import SplitScreen from "../layout/SplitScreen";
 
 const AboutRoot = styled.div`
   background-color: #6f6c58;
@@ -33,7 +34,12 @@ function About() {
       transition={transitionAbout}
       exit={exitAbout}
     >
-      <AboutRoot>About</AboutRoot>
+      <AboutRoot>
+        <SplitScreen leftWeight={1} rightWeight={5}>
+          <>Picture</>
+          <>Some text</>
+        </SplitScreen>
+      </AboutRoot>
     </motion.div>
   );
 }
