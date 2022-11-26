@@ -37,7 +37,7 @@ function About() {
       <AboutRoot>
         <SplitScreen leftWeight={1} rightWeight={5}>
           <>Picture</>
-          <>Some text</>
+          <>Hello My Name Is Justin !</>
         </SplitScreen>
       </AboutRoot>
     </motion.div>
