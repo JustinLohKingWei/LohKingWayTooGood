@@ -26,7 +26,6 @@ const AboutImageHolder = styled.div`
   min-width: 20em;
   max-width: 20em;
   max-height: 45vh;
-  background-color: magenta;
   object-fit: contain;
 `;
 
@@ -37,7 +36,7 @@ const AboutImageImg = styled.img`
 
 function AboutImage() {
 
-  const imageSubtitle = "\"The pen might be mightier than the sword, BUT I HAVE A MUDDAFUCKIN HAMMER BITCHHH\" - Justin Loh"
+  const imageSubtitle = "\"The pen is mightier than the sword, BUT I HAVE A MUDDAFUCKIN HAMMER BITCHHH\" - Justin Loh"
 
   return (
     <AboutImageRoot>
