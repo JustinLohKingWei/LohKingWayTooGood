@@ -10,8 +10,7 @@ import People from "./pages/People";
 
 const ContentRoot = styled.div`
   display: flex;
-  margin: 0;
-  min-height: 81vh;
+  min-height: 75.1vh;
 `;
 
 function Content() {
@@ -26,7 +25,6 @@ function Content() {
         {content === "Experience" && <Experience key="Experience" />}
         {content === "People" && <People key="People" />}
         {content === "CoolStuff" && <CoolStuff key="CoolStuff" />}
-        CoolStuff
         </AnimatePresence>
     </ContentRoot>
   );

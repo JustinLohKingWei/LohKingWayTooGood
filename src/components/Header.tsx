@@ -6,7 +6,7 @@ const HeaderRoot = styled.div`
   z-index: 5;
   display: flex;
   opacity: 50%;
-  min-height: 15vh;
+  min-height: 14vh;
 `;
 
 const Title = styled.div`

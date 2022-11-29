@@ -26,6 +26,15 @@ const NavbarButtonContainer = styled.div`
 const NavbarButton = styled.button`
   font-size: x-large;
   font-family: Montserrat;
+  background: none;
+  border-color: #ffbe94;
+  &:hover {
+    background-color: #f2caaf;
+  }
+  &:focus {
+    background-color: #ffbe94;
+    color: red;
+  }
 `;
 
 function Navbar() {
@@ -34,16 +43,24 @@ function Navbar() {
     <NavbarRoot>
       <NavbarList>
         <NavbarButtonContainer>
-          <NavbarButton onClick={()=>setContent("About")}>About Me</NavbarButton>
+          <NavbarButton onClick={() => setContent("About")}>
+            About Me
+          </NavbarButton>
         </NavbarButtonContainer>
         <NavbarButtonContainer>
-          <NavbarButton onClick={()=>setContent("Experience")}>Experience</NavbarButton>
+          <NavbarButton onClick={() => setContent("Experience")}>
+            Experience
+          </NavbarButton>
         </NavbarButtonContainer>
         <NavbarButtonContainer>
-          <NavbarButton onClick={()=>setContent("CoolStuff")}>Cool Stuff I do</NavbarButton>
+          <NavbarButton onClick={() => setContent("CoolStuff")}>
+            Cool Stuff
+          </NavbarButton>
         </NavbarButtonContainer>
         <NavbarButtonContainer>
-          <NavbarButton onClick={()=>setContent("People")}>Important People</NavbarButton>
+          <NavbarButton onClick={() => setContent("People")}>
+            Important People
+          </NavbarButton>
         </NavbarButtonContainer>
       </NavbarList>
     </NavbarRoot>

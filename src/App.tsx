@@ -4,9 +4,11 @@ import Footer from "./components/Footer";
 import Content from "./components/Content";
 import styled from "styled-components";
 import React, { createContext, useState } from "react";
+import Wallpaper from "./resources/wallpaper.jpg"
 
 const RootContainer = styled.div`
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #b8c6db 100%);
+  /* background-image: linear-gradient(135deg, #f5f7fa 0%, #b8c6db 100%); */
+  background-image: url(${Wallpaper})  ;
   overflow: hidden;
 `;
 

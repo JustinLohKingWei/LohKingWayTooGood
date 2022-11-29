@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const CoolStuffRoot = styled.div`
-  background-color: #ed11ab;
   display: flex;
   min-width: 100vw;
   min-height: 100%;

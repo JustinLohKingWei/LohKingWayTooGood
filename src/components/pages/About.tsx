@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import SplitScreen from "../layout/SplitScreen";
+import AboutImage from "../layout/AboutImage";
 
 const AboutRoot = styled.div`
-  background-color: #6f6c58;
   display: flex;
   min-width: 100vw;
   min-height: 100%;
+  overflow: hidden; ;
 `;
 
 const initialAbout = {
@@ -35,10 +35,7 @@ function About() {
       exit={exitAbout}
     >
       <AboutRoot>
-        <SplitScreen leftWeight={1} rightWeight={5}>
-          <>Picture</>
-          <>Hello My Name Is Justin !</>
-        </SplitScreen>
+        <AboutImage />
       </AboutRoot>
     </motion.div>
   );

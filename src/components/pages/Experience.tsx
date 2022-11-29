@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const ExperienceRoot = styled.div`
-  background-color: #0d38e6;
   display: flex;
   min-width: 100vw;
   min-height: 100%;

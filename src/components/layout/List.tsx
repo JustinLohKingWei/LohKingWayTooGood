@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 import { people, PeopleList } from "../../data/PeopleData";
 
@@ -26,8 +27,8 @@ const ListItem = styled.div`
     border-color: red;
   }
 `;
-
 function List({ peopleList, setcurrentPeople }: ListProps) {
+  const [selected, setSelected] = useState("");
   return (
     <ListRoot>
       {peopleList.map((data) => {

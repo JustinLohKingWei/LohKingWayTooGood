@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 const HomeRoot = styled.div`
-  background-color: gold;
   display: flex;
   min-width: 100vw;
   min-height: 100%;
