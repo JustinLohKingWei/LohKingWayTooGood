@@ -22,19 +22,20 @@ const ListItem = styled.div`
     background-color: rgb(0, 0, 0, 0.7);
     color: white;
   }
-  &:focus-within {
-    outline: none;
-    border-color: red;
+  &:focus {
+    background-color: rgb(0, 0, 0, 0.7);
+    color: red;
   }
 `;
 function List({ peopleList, setcurrentPeople }: ListProps) {
-  const [selected, setSelected] = useState("");
   return (
     <ListRoot>
       {peopleList.map((data) => {
+        let tab = 0;
         return (
           <div>
             <ListItem
+              tabIndex={++tab}
               onClick={() =>
                 setcurrentPeople(
                   PeopleList[

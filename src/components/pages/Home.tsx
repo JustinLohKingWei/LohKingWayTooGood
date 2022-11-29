@@ -5,6 +5,7 @@ const HomeRoot = styled.div`
   display: flex;
   min-width: 100vw;
   min-height: 100%;
+  justify-content:center;
 `;
 
 const initialHome = { opacity: 0};
@@ -25,7 +26,7 @@ function Home() {
       transition={transitionHome}
       exit={exitHome}
     >
-      <HomeRoot>home</HomeRoot>
+      <HomeRoot><h1>Welcome To My Cool Ass Website yo</h1></HomeRoot>
     </motion.div>
   );
 }
