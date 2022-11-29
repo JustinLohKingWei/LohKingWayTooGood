@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import AboutImage from "../layout/AboutImage";
+import SplitScreen from "../layout/SplitScreen";
+import AboutPara from "../layout/AboutPara";
 
 const AboutRoot = styled.div`
   display: flex;
@@ -35,7 +37,10 @@ function About() {
       exit={exitAbout}
     >
       <AboutRoot>
-        <AboutImage />
+        <SplitScreen leftWeight={2} rightWeight={1}>
+          <AboutPara />
+          <AboutImage />
+        </SplitScreen>
       </AboutRoot>
     </motion.div>
   );

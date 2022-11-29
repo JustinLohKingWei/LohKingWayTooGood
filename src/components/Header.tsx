@@ -7,6 +7,8 @@ const HeaderRoot = styled.div`
   display: flex;
   opacity: 50%;
   min-height: 14vh;
+  overflow:visible;
+  flex-wrap: wrap;
 `;
 
 const Title = styled.div`
