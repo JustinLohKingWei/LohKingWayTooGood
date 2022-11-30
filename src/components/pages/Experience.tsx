@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 
 const ExperienceRoot = styled.div`
   display: flex;
-  min-width: 100vw;
+  background-color:  yellow;
+  width: 120rem;
   min-height: 100%;
 `;
 

@@ -6,37 +6,39 @@ const HeaderRoot = styled.div`
   z-index: 5;
   display: flex;
   opacity: 50%;
-  min-height: 14vh;
-  overflow:visible;
+  min-height: 9rem;
   flex-wrap: wrap;
+  width: 120rem;
+`;
+const TitleContainer = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 const Title = styled.div`
-  display: block;
+  display: flex;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 6em;
-  margin: 0.1em;
+  margin: 0.1em 0.1em 0.075em 0.1em;
 `;
 
 const Subtitle = styled.div`
-  display: block;
+  display: flex;
   font-family: Montserrat;
-  font-size: 1.5em;
-  margin: 0.1em;
+  font-size: 2em;
+  margin: 0.075em 0.5em 0 0.5em;
 `;
 
 function Header() {
-
-
   return (
     <HeaderRoot>
-      <SplitScreen leftWeight={1} rightWeight={2}>
-        <>
-          <Title>Johnny Sins</Title>
-          <Subtitle>"Astronaut, Doctor, Plumber, Firefighter, Pizza Deliveryman</Subtitle>
-        </>
-        <Navbar/>
+      <SplitScreen leftWeight={1.5} rightWeight={1}>
+        <TitleContainer>
+          <Title>Justin Loh</Title>
+          <Subtitle>Software Engineer, FullStack Web Developer</Subtitle>
+        </TitleContainer>
+        <Navbar />
       </SplitScreen>
     </HeaderRoot>
   );

@@ -22,11 +22,11 @@ const exitHome = {
 };
 
 const Welcome = styled.div`
-
-font-size: xx-large ;
-font-family: cursive;
-color : #2D112A;
-margin-top: 2em ;
+  font-size: xx-large;
+  font-family: cursive;
+  color: #2d112a;
+  margin-top: 2em;
+  min-width: 100%;
 `;
 
 const initialWelcome = { opacity: 0, y: 500 };

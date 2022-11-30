@@ -8,7 +8,7 @@ import SplitScreen from "../layout/SplitScreen";
 const PeopleRoot = styled.div`
   /* background-color: #ffffff; */
   display: flex;
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 100%;
 `;
 
@@ -16,6 +16,13 @@ const PeopleDescriptionContainer = styled.div`
   max-width: 75vw;
   padding: 0.5em;
 `;
+
+
+
+
+
+
+
 
 const PeopleDescription = styled.div`
   display: block;

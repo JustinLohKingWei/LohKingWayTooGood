@@ -6,7 +6,7 @@ import AboutPara from "../layout/AboutPara";
 
 const AboutRoot = styled.div`
   display: flex;
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 100%;
   overflow: hidden; ;
 `;

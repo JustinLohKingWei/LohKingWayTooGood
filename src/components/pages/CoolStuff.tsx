@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const CoolStuffRoot = styled.div`
   display: flex;
-  min-width: 100vw;
+  width: 120rem;
   min-height: 100%;
 `;
 

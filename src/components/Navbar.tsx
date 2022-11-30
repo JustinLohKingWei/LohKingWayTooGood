@@ -4,18 +4,14 @@ import { globalContextTypes, GlobalContext } from "../App";
 
 const NavbarRoot = styled.div`
   display: flex;
-  padding-top: 6em;
+  padding-top: 5em;
+  width: 100%;
 `;
 
 const NavbarList = styled.div`
   display: flex;
-  min-width: 70em;
-  padding: 0.2em;
   min-height: 2.5em;
-  padding-left: 8em;
-  padding-right: 2em;
   column-gap: 1em;
-  justify-content: flex-end;
 `;
 const NavbarButtonContainer = styled.div`
   opacity: 100%;

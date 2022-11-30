@@ -4,12 +4,16 @@ import Footer from "./components/Footer";
 import Content from "./components/Content";
 import styled from "styled-components";
 import React, { createContext, useState } from "react";
-import Wallpaper from "./resources/wallpaper.jpg"
+import Wallpaper from "./resources/wallpaper.jpg";
 
 const RootContainer = styled.div`
-  /* background-image: linear-gradient(135deg, #f5f7fa 0%, #b8c6db 100%); */
-  background-image: url(${Wallpaper})  ;
+  background-image: url(${Wallpaper});
   overflow: hidden;
+`;
+
+const BlockContainer = styled.div`
+  display: flex;
+  width: 100%;
 `;
 
 export const GlobalContext = createContext<any>(null);
@@ -20,17 +24,22 @@ export type globalContextTypes = {
 };
 
 function App() {
-
   const [content, setContent] = useState("Home");
 
-  const globalContextValues: globalContextTypes = {content,setContent};
+  const globalContextValues: globalContextTypes = { content, setContent };
 
   return (
     <RootContainer>
       <GlobalContext.Provider value={globalContextValues}>
-      <Header />
-      <Content />
-      <Footer />
+        <BlockContainer>
+          <Header />
+        </BlockContainer>
+        <BlockContainer>
+          <Content />
+        </BlockContainer>
+        <BlockContainer>
+          <Footer />
+        </BlockContainer>
       </GlobalContext.Provider>
     </RootContainer>
   );

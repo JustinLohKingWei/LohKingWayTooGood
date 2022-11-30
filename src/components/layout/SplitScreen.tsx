@@ -9,6 +9,7 @@ type SplitScreenProps = {
 const SplitScreenRoot = styled.div`
   display: flex;
   width: 100%;
+  flex-wrap: wrap ;
 `;
 
 interface PaneProps {
