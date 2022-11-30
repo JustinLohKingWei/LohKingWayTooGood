@@ -5,18 +5,34 @@ const HomeRoot = styled.div`
   display: flex;
   min-width: 100vw;
   min-height: 100%;
-  justify-content:center;
+  justify-content: center;
 `;
 
-const initialHome = { opacity: 0};
+const initialHome = { opacity: 0 };
 
-const animateHome = { opacity: 1};
+const animateHome = { opacity: 1 };
 
-const transitionHome = {duration:1};
+const transitionHome = { duration: 1 };
 
-const exitHome = {opacity:0,transition:{
-  duration: 0.5
-}};
+const exitHome = {
+  opacity: 0,
+  transition: {
+    duration: 0.5,
+  },
+};
+
+const Welcome = styled.div`
+
+font-size: xx-large ;
+font-family: cursive;
+color : #2D112A;
+margin-top: 2em ;
+`;
+
+const initialWelcome = { opacity: 0, y: 500 };
+const animateWelcome = { opacity: 1, y: 0 };
+const transtionWelcome = { duration: 1.5 };
+const exitWelcome = { opacity: 0, y: 500 };
 
 function Home() {
   return (
@@ -26,7 +42,16 @@ function Home() {
       transition={transitionHome}
       exit={exitHome}
     >
-      <HomeRoot><h1>Welcome To My Cool Ass Website yo</h1></HomeRoot>
+      <HomeRoot>
+        <motion.div
+          initial={initialWelcome}
+          animate={animateWelcome}
+          transition={transtionWelcome}
+          exit={exitWelcome}
+        >
+          <Welcome>Welcome To My Cool Ass Website yo</Welcome>
+        </motion.div>
+      </HomeRoot>
     </motion.div>
   );
 }
