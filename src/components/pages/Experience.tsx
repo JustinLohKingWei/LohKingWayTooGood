@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const ExperienceRoot = styled.div`
   display: flex;
   background-color:  yellow;
-  width: 120rem;
+  min-width: 100%;
   min-height: 100%;
 `;
 
