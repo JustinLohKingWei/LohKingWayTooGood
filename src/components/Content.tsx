@@ -10,7 +10,7 @@ import People from "./pages/People";
 
 const ContentRoot = styled.div`
   display: flex;
-  height: 43.7rem;
+  min-height: 43.7rem;
 `;
 
 function Content() {

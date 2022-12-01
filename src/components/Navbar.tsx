@@ -11,7 +11,7 @@ const NavbarRoot = styled.div`
 const NavbarList = styled.div`
   display: flex;
   min-height: 2.5em;
-  column-gap: 1em;
+ justify-content: space-evenly ;
 `;
 const NavbarButtonContainer = styled.div`
   opacity: 100%;

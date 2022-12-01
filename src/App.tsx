@@ -7,11 +7,14 @@ import React, { createContext, useState } from "react";
 import Wallpaper from "./resources/wallpaper.jpg";
 
 const RootContainer = styled.div`
+  display: flex;
   background-image: url(${Wallpaper});
-  overflow: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100%;
 `;
 
-const BlockContainer = styled.div`
+const FlexContainer = styled.div`
   display: flex;
   width: 100%;
 `;
@@ -31,15 +34,15 @@ function App() {
   return (
     <RootContainer>
       <GlobalContext.Provider value={globalContextValues}>
-        <BlockContainer>
+        <FlexContainer>
           <Header />
-        </BlockContainer>
-        <BlockContainer>
+        </FlexContainer>
+        <FlexContainer>
           <Content />
-        </BlockContainer>
-        <BlockContainer>
+        </FlexContainer>
+        <FlexContainer>
           <Footer />
-        </BlockContainer>
+        </FlexContainer>
       </GlobalContext.Provider>
     </RootContainer>
   );

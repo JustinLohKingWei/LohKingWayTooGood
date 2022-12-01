@@ -29,10 +29,10 @@ const Welcome = styled.div`
   min-width: 100%;
 `;
 
-const initialWelcome = { opacity: 0, y: 500 };
+const initialWelcome = { opacity: 0.2, y: 50 };
 const animateWelcome = { opacity: 1, y: 0 };
 const transtionWelcome = { duration: 1.5 };
-const exitWelcome = { opacity: 0, y: 500 };
+const exitWelcome = { opacity: 0, y: 50 };
 
 function Home() {
   return (

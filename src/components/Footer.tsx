@@ -5,6 +5,9 @@ const FooterRoot = styled.div`
   width: 100%;
   justify-content: center;
   color: #ffbe94;
+  flex-wrap: wrap ;
+  word-break: break-all ;
+  background-color: #2d112a ;
 `;
 
 function Footer() {

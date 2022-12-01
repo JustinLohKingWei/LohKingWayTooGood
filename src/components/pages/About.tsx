@@ -7,8 +7,7 @@ import AboutPara from "../layout/AboutPara";
 const AboutRoot = styled.div`
   display: flex;
   min-width: 100%;
-  min-height: 100%;
-  overflow: hidden; ;
+  min-height: 43.7rem;
 `;
 
 const initialAbout = {
