@@ -10,10 +10,11 @@ const PeopleRoot = styled.div`
   display: flex;
   min-width: 100%;
   min-height: 100%;
+  background-color: red ;
 `;
 
 const PeopleDescriptionContainer = styled.div`
-  max-width: 90rem;
+display:flex;
   min-width: 100%;
   padding: 0.5em;
 `;
@@ -27,6 +28,8 @@ const PeopleDescription = styled.div`
   border-color: black;
   border-style: solid;
   padding: 0.5em;
+  
+  max-width: 90rem;
 `;
 
 const initialPeople = {

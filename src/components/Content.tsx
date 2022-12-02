@@ -11,6 +11,7 @@ import People from "./pages/People";
 const ContentRoot = styled.div`
   display: flex;
   min-height: 43.7rem;
+  width:100%;
 `;
 
 function Content() {
@@ -18,7 +19,7 @@ function Content() {
   const { content }: globalContextTypes = useContext(GlobalContext);
 
   return (
-    <ContentRoot>
+    <ContentRoot id="Content">
       <AnimatePresence mode="wait">
         {content === "Home" && <Home key="Home"/>}
         {content === "About" && <About key="About"/>}

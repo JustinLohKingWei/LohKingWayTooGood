@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import UnderConstruction from "../layout/UnderConstruction";
 
 const CoolStuffRoot = styled.div`
   display: flex;
-  min-width: 100%;
+  width: 100vw;
   min-height: 100%;
 `;
 
@@ -32,7 +33,7 @@ function CoolStuff() {
       transition={transitionCoolStuff}
       exit={exitCoolStuff}
     >
-      <CoolStuffRoot>This Page Is For Cool Stuff</CoolStuffRoot>
+      <CoolStuffRoot><UnderConstruction/></CoolStuffRoot>
     </motion.div>
   );
 }

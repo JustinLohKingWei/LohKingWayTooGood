@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const FooterRoot = styled.div`
   display: flex;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
   color: #ffbe94;
   flex-wrap: wrap ;

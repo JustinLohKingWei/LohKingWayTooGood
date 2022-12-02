@@ -12,6 +12,7 @@ const NavbarList = styled.div`
   display: flex;
   min-height: 2.5em;
  justify-content: space-evenly ;
+ flex-wrap: wrap ;
 `;
 const NavbarButtonContainer = styled.div`
   padding: 1em;

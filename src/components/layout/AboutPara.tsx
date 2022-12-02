@@ -14,7 +14,7 @@ const AboutParaContainer = styled.div`
   opacity: 0.8;
   max-height: 35rem;
   min-width: 90%;
-  padding: 2em 2em 0 2em;
+  padding: 1em 2em 0 2em;
   border-radius: 2em;
 `;
 
@@ -23,7 +23,9 @@ const AboutParaHolder = styled.div`
   font-size: large;
   white-space: pre-line;
   font-family: cursive;
+  padding-bottom: 1em ;
   overflow-y: scroll;
+  min-width: 25em; ;
   &::-webkit-scrollbar {
     width: 0.5em;
   }

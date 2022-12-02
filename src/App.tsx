@@ -13,7 +13,7 @@ const RootContainer = styled.div`
   flex-wrap: wrap;
   min-height: 100vh;
   /* min-width: 43.7rem; */
-  max-width: 129rem;
+  max-width: 120rem;
 `;
 
 const FlexContainer = styled.div`

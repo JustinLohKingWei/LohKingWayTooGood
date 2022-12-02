@@ -5,10 +5,10 @@ import Navbar from "./Navbar";
 const HeaderRoot = styled.div`
   z-index: 5;
   display: flex;
-  opacity: 50%;
+  opacity: 70%;
   min-height: 9rem;
   flex-wrap: wrap;
-  width: 120rem;
+  width: 100vw;
 `;
 const TitleContainer = styled.div`
   display: flex;

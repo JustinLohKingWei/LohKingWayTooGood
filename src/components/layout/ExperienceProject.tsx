@@ -7,7 +7,7 @@ const ExperienceProjectRoot = styled.div`
 `;
 
 function ExperienceProject() {
-  return <ExperienceProjectRoot>Projects</ExperienceProjectRoot>;
+  return <ExperienceProjectRoot>Projects Projects Projects Projects Projects Projects Projects ProjectsProjects </ExperienceProjectRoot>;
 }
 
 export default ExperienceProject;
