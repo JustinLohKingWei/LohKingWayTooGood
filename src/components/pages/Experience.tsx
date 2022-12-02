@@ -1,8 +1,5 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import SplitScreen from "../layout/SplitScreen";
-import ExperienceWork from "../layout/ExperienceWork";
-import ExperienceProject from "../layout/ExperienceProject";
 import UnderConstruction from "../layout/UnderConstruction";
 
 const ExperienceRoot = styled.div`
@@ -33,10 +30,7 @@ function Experience() {
       exit={exitExperience}
     >
       <ExperienceRoot>
-        {/* <SplitScreen leftWeight={1} rightWeight={1}>
-          <ExperienceWork/>
-          <ExperienceProject/>
-        </SplitScreen> */}
+     
 
         <UnderConstruction/>
       </ExperienceRoot>
