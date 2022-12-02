@@ -8,11 +8,12 @@ import Wallpaper from "./resources/wallpaper.jpg";
 
 const RootContainer = styled.div`
   display: flex;
-  background: url(${Wallpaper}) no-repeat;
+  background: #2d112a url(${Wallpaper}) no-repeat left top;
   flex-direction: column;
   flex-wrap: wrap;
-  min-height: 100%;
-  min-width: 43.7rem;
+  min-height: 100vh;
+  /* min-width: 43.7rem; */
+  max-width: 129rem;
 `;
 
 const FlexContainer = styled.div`

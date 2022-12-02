@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import aboutImage from "../../resources/hammerboi.jpg";
+import { AboutProfile } from "../../data/AboutData";
 
 const AboutImageRoot = styled.div`
-  display: flex;
-  
+  display: flex;  
   height: 37rem;
   padding: 10% 10% 0 10% ;
   justify-content: center;
@@ -35,15 +35,12 @@ const AboutImageImg = styled.img`
 `;
 
 function AboutImage() {
-
-  const imageSubtitle = "\"The pen is mightier than the sword, BUT I HAVE A MUDDAFUCKIN HAMMER BITCHHH\" - Justin Loh"
-
   return (
     <AboutImageRoot>
       <AboutImageContainer>
         <AboutImageHolder>
           <AboutImageImg src={aboutImage} alt="Me" />
-          <h4>{imageSubtitle}</h4>
+          <h4>{AboutProfile.imageSubtitle}</h4>
         </AboutImageHolder>
       </AboutImageContainer>
     </AboutImageRoot>

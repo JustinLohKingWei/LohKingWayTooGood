@@ -14,13 +14,11 @@ const NavbarList = styled.div`
  justify-content: space-evenly ;
 `;
 const NavbarButtonContainer = styled.div`
-  opacity: 100%;
-  color: black;
   padding: 1em;
 `;
 
 const NavbarButton = styled.button`
-  font-size: x-large;
+  font-size: 1.7em;
   font-family: Montserrat;
   background: none;
   border-color: #ffbe94;

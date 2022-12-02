@@ -13,17 +13,10 @@ const PeopleRoot = styled.div`
 `;
 
 const PeopleDescriptionContainer = styled.div`
-  max-width: 75vw;
+  max-width: 90rem;
+  min-width: 100%;
   padding: 0.5em;
 `;
-
-
-
-
-
-
-
-
 const PeopleDescription = styled.div`
   display: block;
   overflow: auto;
@@ -31,7 +24,7 @@ const PeopleDescription = styled.div`
   overflow-wrap: break-word;
   font-size: large;
   border-width: 0 0 0 0.1em;
-  border-color: black ;
+  border-color: black;
   border-style: solid;
   padding: 0.5em;
 `;
