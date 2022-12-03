@@ -4,7 +4,7 @@ import styled from "styled-components";
 const HomeRoot = styled.div`
   display: flex;
   min-height: 100%;
-  min-width: 100% ;
+  min-width: 100vw ;
   justify-content: center;
   flex-wrap: wrap ;
   word-break: break-all ;

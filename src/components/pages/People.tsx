@@ -8,28 +8,39 @@ import SplitScreen from "../layout/SplitScreen";
 const PeopleRoot = styled.div`
   /* background-color: #ffffff; */
   display: flex;
-  min-width: 100%;
-  min-height: 100%;
-  background-color: red ;
+  min-width: 100vw;
+  min-height: 43.7rem;
 `;
 
 const PeopleDescriptionContainer = styled.div`
-display:flex;
+  display: flex;
   min-width: 100%;
-  padding: 0.5em;
+  justify-content: center;
+  height: 100%;
+  padding-top: 2em;
 `;
+const PeopleDescriptionHolder = styled.div`
+  display: flex;
+  border-radius: 2em ;
+  padding: 2em;
+  min-width: 65rem;
+  background-color: #000000;
+  opacity: 0.6;
+  max-height: 35rem;
+
+`;
+
 const PeopleDescription = styled.div`
-  display: block;
-  overflow: auto;
-  overflow-block: auto;
-  overflow-wrap: break-word;
+  color: white;
   font-size: large;
+  white-space: pre-line;
+  word-wrap: break-word;
+  word-break: break-all; 
   border-width: 0 0 0 0.1em;
-  border-color: black;
+  border-color: #ffffff;
   border-style: solid;
-  padding: 0.5em;
-  
-  max-width: 90rem;
+  padding: 1em;
+  max-width: 55em;
 `;
 
 const initialPeople = {
@@ -65,10 +76,12 @@ function People() {
       exit={exitPeople}
     >
       <PeopleRoot>
-        <SplitScreen leftWeight={1} rightWeight={5}>
+        <SplitScreen leftWeight={1} rightWeight={2}>
           <List peopleList={PeopleList} setcurrentPeople={setCurrentPeople} />
           <PeopleDescriptionContainer>
-            <PeopleDescription>{currentPeople.description}</PeopleDescription>
+            <PeopleDescriptionHolder>
+              <PeopleDescription>{currentPeople.description}</PeopleDescription>
+            </PeopleDescriptionHolder>
           </PeopleDescriptionContainer>
         </SplitScreen>
       </PeopleRoot>

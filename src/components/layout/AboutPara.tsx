@@ -14,7 +14,7 @@ const AboutParaContainer = styled.div`
   opacity: 0.8;
   max-height: 35rem;
   min-width: 90%;
-  padding: 1em 2em 0 2em;
+  padding: 0em 2em 0 2em;
   border-radius: 2em;
 `;
 
