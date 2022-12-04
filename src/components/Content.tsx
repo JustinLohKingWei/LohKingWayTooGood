@@ -11,7 +11,9 @@ import People from "./pages/People";
 const ContentRoot = styled.div`
   display: flex;
   min-height: 43.7rem;
-  width:100%;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
 `;
 
 function Content() {
@@ -21,12 +23,12 @@ function Content() {
   return (
     <ContentRoot id="Content">
       <AnimatePresence mode="wait">
-        {content === "Home" && <Home key="Home"/>}
-        {content === "About" && <About key="About"/>}
+        {content === "Home" && <Home key="Home" />}
+        {content === "About" && <About key="About" />}
         {content === "Experience" && <Experience key="Experience" />}
         {content === "People" && <People key="People" />}
         {content === "CoolStuff" && <CoolStuff key="CoolStuff" />}
-        </AnimatePresence>
+      </AnimatePresence>
     </ContentRoot>
   );
 }

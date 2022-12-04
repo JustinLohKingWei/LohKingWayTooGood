@@ -4,10 +4,10 @@ import styled from "styled-components";
 const HomeRoot = styled.div`
   display: flex;
   min-height: 100%;
-  min-width: 100vw ;
+  width: 100vw;
+  max-width: 100%;
   justify-content: center;
-  flex-wrap: wrap ;
-  word-break: break-all ;
+  overflow-y: hidden;
 `;
 
 const initialHome = { opacity: 0 };
@@ -24,11 +24,11 @@ const exitHome = {
 };
 
 const Welcome = styled.div`
+  display: flex;
   font-size: xx-large;
   font-family: cursive;
   color: #2d112a;
   margin-top: 2em;
-  min-width: 100%;
 `;
 
 const initialWelcome = { opacity: 0.2, y: 50 };

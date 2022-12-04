@@ -8,26 +8,38 @@ import SplitScreen from "../layout/SplitScreen";
 const PeopleRoot = styled.div`
   /* background-color: #ffffff; */
   display: flex;
-  min-width: 100vw;
+  max-width: 100vw;
   min-height: 43.7rem;
 `;
 
-const PeopleDescriptionContainer = styled.div`
+const PeopleListContainer = styled.div`
+
   display: flex;
-  min-width: 100%;
+  justify-content: center;
+  padding: 5% 5% 0 5%;
+  max-height: 40rem;
+  flex: 1 ;
+`;
+
+const PeopleDescriptionContainer = styled.div`
+max-width:100%;
+  display: flex;
+  max-width: 100%;
   justify-content: center;
   height: 100%;
-  padding-top: 2em;
+  background-color: gold;
+  padding: 0 5% 0 5%;
+
 `;
 const PeopleDescriptionHolder = styled.div`
   display: flex;
-  border-radius: 2em ;
-  padding: 2em;
-  min-width: 65rem;
+  border-radius: 2em;
+  padding: 3%;
   background-color: #000000;
-  opacity: 0.6;
+  opacity: 0.8;
   max-height: 35rem;
-
+  margin: 2em 2.5em 0 2.5em;
+  min-width: 90%;
 `;
 
 const PeopleDescription = styled.div`
@@ -35,12 +47,13 @@ const PeopleDescription = styled.div`
   font-size: large;
   white-space: pre-line;
   word-wrap: break-word;
-  word-break: break-all; 
+  word-break: break-all;
   border-width: 0 0 0 0.1em;
   border-color: #ffffff;
   border-style: solid;
   padding: 1em;
-  max-width: 55em;
+  min-width: 20em;
+  overflow-y: auto ;
 `;
 
 const initialPeople = {
@@ -77,7 +90,9 @@ function People() {
     >
       <PeopleRoot>
         <SplitScreen leftWeight={1} rightWeight={2}>
-          <List peopleList={PeopleList} setcurrentPeople={setCurrentPeople} />
+          <PeopleListContainer>
+            <List peopleList={PeopleList} setcurrentPeople={setCurrentPeople} />
+          </PeopleListContainer>
           <PeopleDescriptionContainer>
             <PeopleDescriptionHolder>
               <PeopleDescription>{currentPeople.description}</PeopleDescription>

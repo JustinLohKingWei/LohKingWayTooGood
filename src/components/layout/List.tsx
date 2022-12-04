@@ -9,6 +9,12 @@ type ListProps = {
 const ListRoot = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: black;
+  color:white;
+  opacity: 0.8;
+  border-radius: 2em;
+  min-width: 28em;
+  padding: 1em 0 1em 0 ;
 `;
 
 const ListItem = styled.div`
@@ -19,11 +25,13 @@ const ListItem = styled.div`
   justify-content: center;
   &:hover {
     background-color: rgb(0, 0, 0, 0.7);
-    color: white;
+    color: black;
+    background-color: white ;
   }
   &:focus {
     background-color: rgb(0, 0, 0, 0.7);
     color: red;
+    background-color: white ;
   }
 `;
 function List({ peopleList, setcurrentPeople }: ListProps) {

@@ -18,7 +18,7 @@ export const PeopleList: people[] = [
   },
   {
     name: "Mickey Mouse's Crack House",
-    description: "ITS THE MICKEY MOUSE CRACK HOUSE HUH HAH",
+    description: "ITS THE MICKEY MOUSE CRACK HOUSE HUH HAH  HUH HAH  HUH HAH  HUH HAH  HUH HAH  HUH HAH  HOUSE HUH HAH  HUH HAH  HUH HAH  HUH HAH  HUH HAH  HUH HAH  HOUSE HUH HAH  HUH HAH  HUH HAH  HUH HAH  HUH HAH  HUH HAH",
   },
   {
     name: "BUFF JESUS",

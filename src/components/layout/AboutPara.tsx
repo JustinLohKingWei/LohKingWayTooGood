@@ -25,7 +25,7 @@ const AboutParaHolder = styled.div`
   font-family: cursive;
   padding-bottom: 1em ;
   overflow-y: scroll;
-  min-width: 25em; ;
+  min-width: 20em; ;
   &::-webkit-scrollbar {
     width: 0.5em;
   }
