@@ -8,7 +8,8 @@ import SplitScreen from "../layout/SplitScreen";
 const PeopleRoot = styled.div`
   /* background-color: #ffffff; */
   display: flex;
-  max-width: 100vw;
+  width: 100vw;
+  max-width: 100% ;
   min-height: 43.7rem;
 `;
 
@@ -27,7 +28,6 @@ max-width:100%;
   max-width: 100%;
   justify-content: center;
   height: 100%;
-  background-color: gold;
   padding: 0 5% 0 5%;
 
 `;
