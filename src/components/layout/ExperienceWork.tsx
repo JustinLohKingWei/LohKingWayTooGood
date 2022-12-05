@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Card from "./SkillCard";
 
 const ExperienceWorkRoot = styled.div`
   display: flex;
