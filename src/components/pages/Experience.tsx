@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import ExperienceProject from "../layout/ExperienceProject";
 import ExperienceWork from "../layout/ExperienceWork";
 import SplitScreen from "../layout/SplitScreen";
+import ExperienceSkills from "../layout/ExperienceSkills";
 
 const ExperienceRoot = styled.div`
   display: flex;
@@ -35,7 +35,7 @@ function Experience() {
       <ExperienceRoot>
         <SplitScreen leftWeight={1} rightWeight={1}>
           <ExperienceWork/>
-          <ExperienceProject/>
+          <ExperienceSkills/>
         </SplitScreen>
       </ExperienceRoot>
     </motion.div>
