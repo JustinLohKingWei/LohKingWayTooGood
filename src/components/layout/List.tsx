@@ -11,7 +11,7 @@ const ListRoot = styled.div`
   flex-direction: column;
   background-color: black;
   color:white;
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 2em;
   min-width: 28em;
   padding: 1em 0 1em 0 ;

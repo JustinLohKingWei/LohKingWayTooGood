@@ -54,7 +54,7 @@ function Navbar() {
         </NavbarButtonContainer>
         <NavbarButtonContainer>
           <NavbarButton onClick={() => setContent("People")}>
-            Important People
+            Acknowledgements
           </NavbarButton>
         </NavbarButtonContainer>
       </NavbarList>

@@ -1,9 +1,12 @@
 import styled from "styled-components";
+import Card from "./SkillCard";
 
 const ExperienceWorkRoot = styled.div`
   display: flex;
   width: 100%;
-  background-color: blue ;
+  height:100%;
+  justify-content: center ;
+  align-items: center;
 `;
 
 function ExperienceWork() {

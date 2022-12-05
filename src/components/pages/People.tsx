@@ -36,7 +36,7 @@ const PeopleDescriptionHolder = styled.div`
   border-radius: 2em;
   padding: 3%;
   background-color: #000000;
-  opacity: 0.8;
+  opacity: 0.9;
   max-height: 35rem;
   margin: 2em 2.5em 0 2.5em;
   min-width: 90%;

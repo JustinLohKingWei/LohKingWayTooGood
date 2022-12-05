@@ -10,7 +10,7 @@ const UnderConstructionRoot = styled.div`
 const UnderConstructionContainer = styled.div`
   display: flex;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.9;
   padding:1em;
   color: #ffbe94;
   font-size: 5em ;

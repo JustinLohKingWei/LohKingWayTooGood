@@ -7,6 +7,7 @@ import SplitScreen from "../layout/SplitScreen";
 const ExperienceRoot = styled.div`
   display: flex;
   width: 100vw;
+  max-width: 100% ;
   min-height: 43.7rem;
 `;
 

@@ -11,7 +11,7 @@ const AboutParaContainer = styled.div`
   display: flex;
   background-color: black;
   color: white;
-  opacity: 0.8;
+  opacity: 0.9;
   max-height: 35rem;
   min-width: 90%;
   padding: 0em 2em 0 2em;

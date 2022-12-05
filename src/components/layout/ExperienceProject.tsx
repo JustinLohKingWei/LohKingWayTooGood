@@ -1,13 +1,23 @@
 import styled from "styled-components";
+import { SkillData } from "../../data/ExperienceData";
+import SkillCard from "./SkillCard";
 
 const ExperienceProjectRoot = styled.div`
   display: flex;
   width: 100%;
-  background-color: green ;
+  min-width: 20em;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 `;
 
 function ExperienceProject() {
-  return <ExperienceProjectRoot>Projects Projects Projects Projects Projects Projects Projects ProjectsProjects </ExperienceProjectRoot>;
+  return (
+    <ExperienceProjectRoot>
+      {SkillData.map((data)=>{return(<SkillCard skill={data}></SkillCard>)})}
+    </ExperienceProjectRoot>
+  );
 }
 
 export default ExperienceProject;
