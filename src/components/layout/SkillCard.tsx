@@ -12,7 +12,7 @@ import {
 } from "react-icons/di";
 import { SiCplusplus, SiNodedotjs, SiTypescript } from "react-icons/si";
 import { FaPencilRuler } from "react-icons/fa";
-import {AiFillStar} from "react-icons/ai"
+import { AiFillStar } from "react-icons/ai";
 import { skill } from "../../data/ExperienceData";
 const SkillCardRoot = styled.div`
   display: flex;
@@ -60,6 +60,7 @@ const SkillCardRatingHolder = styled.div`
   height: 100%;
   align-items: center;
   justify-content: center;
+  color: white;
 `;
 
 type SkillCardProps = {
@@ -67,7 +68,9 @@ type SkillCardProps = {
 };
 
 function SkillCard({ skill }: SkillCardProps) {
- const rating =  new Array(skill.skillRating);
+  const rating = Array.from({ length: skill.skillRating }, () => {
+    return <AiFillStar size="1em" color="#ffbe94" />;
+  });
   return (
     <SkillCardRoot>
       <SkillCardLogoContainer>
@@ -130,7 +133,7 @@ function SkillCard({ skill }: SkillCardProps) {
         <SkillCardNameHolder>{skill.name}</SkillCardNameHolder>
       </SkillCardNameContainer>
       <SkillCardRatingContainer>
-        <SkillCardRatingHolder>{rating.map(()=>{return(<AiFillStar size="1em" color="#ffbe94"/>)})}</SkillCardRatingHolder>
+        <SkillCardRatingHolder>{rating}</SkillCardRatingHolder>
       </SkillCardRatingContainer>
     </SkillCardRoot>
   );

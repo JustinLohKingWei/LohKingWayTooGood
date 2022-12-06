@@ -2,13 +2,16 @@ export type work = {
   name: string;
 };
 
-export const WorkData = [{ name: "Atomata", startdate: "" }, {}];
+export const WorkData = [
+  { name: "Atomata", postion: "Software Developer (React TS)", startdate: "" },
+  {},
+];
 
 export type skill = {
   name: string;
   noOfProjects?: number;
   description: string;
-  skillRating?: number;
+  skillRating: number;
 };
 
 export const SkillData: skill[] = [
