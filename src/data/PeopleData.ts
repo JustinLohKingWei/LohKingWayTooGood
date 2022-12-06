@@ -4,7 +4,7 @@ export const PeopleList: people[] = [
   {
     name: "Elaine",
     description:
-      "There isn't much of my life that I can recall when Elaine was not a part of it",
+      "There isn't much of my life that I can recall when Elaine was not a part of it.",
   },
   {
     name: "Haw",

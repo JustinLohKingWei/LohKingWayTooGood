@@ -44,7 +44,7 @@ const PeopleDescriptionHolder = styled.div`
 
 const PeopleDescription = styled.div`
   color: #ffbe94;
-  font-size:  x-large;
+  font-size:  1.25em;
   white-space: pre-line;
   word-wrap: break-word;
   border-width: 0 0 0 0.1em;
