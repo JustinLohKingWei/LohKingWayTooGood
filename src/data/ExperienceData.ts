@@ -1,10 +1,11 @@
 export type work = {
   name: string;
+  position: string;
 };
 
-export const WorkData = [
-  { name: "Atomata", postion: "Software Developer (React TS)", startdate: "" },
-  {},
+export const WorkData: work[] = [
+  { name: "Atomata", position: "Software Developer (React TS)" },
+  { name: "Le Majesthe", position: "Supervisor" },
 ];
 
 export type skill = {

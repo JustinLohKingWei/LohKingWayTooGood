@@ -17,7 +17,7 @@ const AboutImageContainer = styled.div`
   max-width: 45rem;
   justify-content: center;
   background-color: black;
-  color: white;
+  color: #ffbe94;
   opacity: 0.9;
   max-height: 33rem;
   border-radius: 2em;

@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { WorkData } from "../../data/ExperienceData";
+import WorkCard from "./WorkCard";
 
 const ExperienceWorkRoot = styled.div`
   display: flex;
@@ -19,7 +21,8 @@ const ExperienceWorkTitle = styled.div`
 `;
 
 function ExperienceWork() {
-  return <ExperienceWorkRoot><ExperienceWorkTitle>Work</ExperienceWorkTitle></ExperienceWorkRoot>;
+  return <ExperienceWorkRoot><ExperienceWorkTitle>Work</ExperienceWorkTitle>
+    {WorkData.map((data)=>{return(<WorkCard work={data}/>)})}</ExperienceWorkRoot>;
 }
 
 export default ExperienceWork;

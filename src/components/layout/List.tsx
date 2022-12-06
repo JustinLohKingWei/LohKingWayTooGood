@@ -10,7 +10,7 @@ const ListRoot = styled.div`
   display: flex;
   flex-direction: column;
   background-color: black;
-  color:white;
+  color:#ffbe94;
   opacity: 0.9;
   border-radius: 2em;
   min-width: 28em;
@@ -24,14 +24,12 @@ const ListItem = styled.div`
   display: flex;
   justify-content: center;
   &:hover {
-    background-color: rgb(0, 0, 0, 0.7);
-    color: black;
-    background-color: white ;
+    background-color: #191717;
+    opacity: 1;
   }
   &:focus {
-    background-color: rgb(0, 0, 0, 0.7);
-    color: red;
-    background-color: white ;
+    background-color: #191717;
+    opacity: 1;
   }
 `;
 function List({ peopleList, setcurrentPeople }: ListProps) {

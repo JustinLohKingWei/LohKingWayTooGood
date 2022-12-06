@@ -10,7 +10,7 @@ const AboutParaRoot = styled.div`
 const AboutParaContainer = styled.div`
   display: flex;
   background-color: black;
-  color: white;
+  color: #ffbe94;
   opacity: 0.9;
   max-height: 35rem;
   min-width: 90%;

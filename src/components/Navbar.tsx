@@ -4,7 +4,7 @@ import { globalContextTypes, GlobalContext } from "../App";
 
 const NavbarRoot = styled.div`
   display: flex;
-  padding-top: 5em;
+  padding-top: 3em;
   width: 100%;
 `;
 
@@ -15,20 +15,22 @@ const NavbarList = styled.div`
  flex-wrap: wrap ;
 `;
 const NavbarButtonContainer = styled.div`
-  padding: 1em;
+  padding: 0.5em;
 `;
 
 const NavbarButton = styled.button`
-  font-size: 1.7em;
+  font-size: 2em;
   font-family: Montserrat;
-  background: none;
+  background: black;
   border-color: #ffbe94;
+  color: #ffbe94;
+  opacity:1;
   &:hover {
-    background-color: #f2caaf;
+    background-color: #211e1e;
   }
   &:focus {
-    background-color: #ffbe94;
-    color: red;
+    color: #ef9a62;
+    background-color: #211e1e;
   }
 `;
 

@@ -43,13 +43,13 @@ const PeopleDescriptionHolder = styled.div`
 `;
 
 const PeopleDescription = styled.div`
-  color: white;
-  font-size: large;
+  color: #ffbe94;
+  font-size:  x-large;
   white-space: pre-line;
   word-wrap: break-word;
   word-break: break-all;
   border-width: 0 0 0 0.1em;
-  border-color: #ffffff;
+  border-color: #ffbe94;
   border-style: solid;
   padding: 1em;
   min-width: 20em;
@@ -76,8 +76,8 @@ const exitPeople = {
 function People() {
   // snipet which finds a certain people object in the people array
   const [currentPeople, setCurrentPeople] = useState(
-    PeopleList[
-      PeopleList.findIndex((element: people) => element.name === "Arry Pottah")
+    PeopleList[0
+      // PeopleList.findIndex((element: people) => element.name === "Arry Pottah")
     ]
   );
 
