@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import styled from "styled-components";
-import { people, PeopleList } from "../../data/PeopleData";
+import { PeopleList } from "../../data/PeopleData";
 import List from "../layout/List";
 import SplitScreen from "../layout/SplitScreen";
 
@@ -47,12 +47,11 @@ const PeopleDescription = styled.div`
   font-size:  x-large;
   white-space: pre-line;
   word-wrap: break-word;
-  word-break: break-all;
   border-width: 0 0 0 0.1em;
   border-color: #ffbe94;
   border-style: solid;
   padding: 1em;
-  min-width: 20em;
+  min-width: 10em;
   overflow-y: auto ;
 `;
 

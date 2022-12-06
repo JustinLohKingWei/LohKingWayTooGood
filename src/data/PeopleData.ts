@@ -13,19 +13,23 @@ export const PeopleList: people[] = [
   },
   {
     name: "Ethan",
-    description:
-      "A role model and somebody to look up to.",
+    description: "A role model and somebody to look up to.",
   },
   {
     name: "Tashfia",
-    description: "Our unoffical pact of helping each other out",
+    description:
+      "Our unoffical pact of helping each other out.\n\nTash and I graduated on the same day, with my friend walking the stage to be presented with her degree certification a few moments after I had recieved mine.",
   },
   {
     name: "Millie",
-    description: "Not a software engineering thing but she made me who I am"
+    description: "Not a software engineering thing but she made me who I am",
   },
   {
     name: "Team Epista",
-    description : "After our team split. Thank you for helping me grow."
-  }
+    description: "After our team split. Thank you for helping me grow.",
+  },
+  {
+    name: "James and Matt",
+    description: "Cool bois",
+  },
 ];

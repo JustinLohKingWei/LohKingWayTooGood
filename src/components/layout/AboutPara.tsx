@@ -20,7 +20,7 @@ const AboutParaContainer = styled.div`
 
 const AboutParaHolder = styled.div`
   display: flex;
-  font-size: large;
+  font-size: 1em;
   white-space: pre-line;
   font-family: cursive;
   padding-bottom: 1em ;
