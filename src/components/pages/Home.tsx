@@ -26,7 +26,7 @@ const exitHome = {
 const Welcome = styled.div`
   display: flex;
   font-size: xx-large;
-  font-family: cursive;
+  font-family: 'Comic Sans MS';
   color: #2d112a;
   margin-top: 2em;
 `;
@@ -51,7 +51,7 @@ function Home() {
           transition={transtionWelcome}
           exit={exitWelcome}
         >
-          <Welcome>Welcome To My Cool Ass Website yo</Welcome>
+          <Welcome>Being alive is making choices. Between love and hate, between holding out your hand or closing it as a fist....<br/>You have to accept the world as it is.....or fight to change it.<br/>- Carl Manfred</Welcome>
         </motion.div>
       </HomeRoot>
     </motion.div>

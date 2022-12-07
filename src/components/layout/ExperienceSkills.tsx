@@ -18,6 +18,7 @@ const ExperienceSkillTitle = styled.div`
   min-width: 14.5em;
   justify-content: center;
   font-size: xx-large;
+  font-weight: bold ;
 `;
 
 const ExperienceCardContainer = styled.div`

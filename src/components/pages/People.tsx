@@ -45,6 +45,7 @@ const PeopleDescriptionHolder = styled.div`
 const PeopleDescription = styled.div`
   color: #ffbe94;
   font-size:  1.25em;
+  font-family: "Comic Sans MS" ;
   white-space: pre-line;
   word-wrap: break-word;
   border-width: 0 0 0 0.1em;

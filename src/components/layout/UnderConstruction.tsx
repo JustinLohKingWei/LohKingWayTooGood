@@ -13,13 +13,13 @@ const UnderConstructionContainer = styled.div`
   opacity: 0.9;
   padding:1em;
   color: #ffbe94;
-  font-size: 5em ;
+  font-size: 3em ;
 `;
 
 function UnderConstruction() {
   return (
     <UnderConstructionRoot>
-      <UnderConstructionContainer>I'm Still Figuring It Out! Stay Tuned!</UnderConstructionContainer>
+      <UnderConstructionContainer>Justin is working tirelessly on something cool here<br/>....<br/>or is he?</UnderConstructionContainer>
     </UnderConstructionRoot>
   );
 }
