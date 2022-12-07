@@ -27,8 +27,11 @@ const Welcome = styled.div`
   display: flex;
   font-size: xx-large;
   font-family: 'Comic Sans MS';
-  color: #2d112a;
+  color: #ffbe94;
   margin-top: 2em;
+  background-color: black ;
+  border-radius: 1em ;
+  padding: 1em; ;
 `;
 
 const initialWelcome = { opacity: 0.2, y: 50 };
