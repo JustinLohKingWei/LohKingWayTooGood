@@ -1,4 +1,4 @@
-# Justin's React Application
+# LohKingWayTooGood.com
 
 My Personal Website
 
@@ -6,7 +6,7 @@ The application is written as a react application and uses the Styled Components
 
 ## Features
 
-The application allows a user to Create and modify a report object, and clear the input when the input button is selected.
+The application features responsive mobile screen sizing, simple framer motion animations as component transitions, in order to properly showcase my relevant skills and abilities.
 
 ## Included Packages, Libraries, Configurations
 
@@ -39,6 +39,7 @@ The application allows a user to Create and modify a report object, and clear th
 
 1. Add proper styling
 2. Complete the rest of data modification functionalities.
+3. Integrate a Django Backend.
 
 ### Bugs
 

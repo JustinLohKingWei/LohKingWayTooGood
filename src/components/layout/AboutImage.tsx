@@ -12,8 +12,8 @@ const AboutImageRoot = styled.div`
 
 const AboutImageContainer = styled.div`
   display: flex;
-  min-width: 5em;
-  width: 30em;
+  min-width: 20em;
+  width: 75%;
   justify-content: center;
   background-color: black;
   color: #ffbe94;
@@ -25,8 +25,8 @@ const AboutImageContainer = styled.div`
 
 const AboutImageHolder = styled.div`
   display: block;
-  min-width: 10em ;
-  width: 20em;
+  min-width: 20em ;
+  width: 70%;
   max-height: 25em;
   object-fit: contain;
 `;

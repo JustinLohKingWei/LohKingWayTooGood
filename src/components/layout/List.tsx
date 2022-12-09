@@ -13,7 +13,8 @@ const ListRoot = styled.div`
   color:#ffbe94;
   opacity: 0.9;
   border-radius: 2em;
-  min-width: 28em;
+  min-width: 15em;
+  width: 80%;
   padding: 1em 0 1em 0 ;
 `;
 
