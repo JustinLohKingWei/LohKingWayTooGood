@@ -9,27 +9,25 @@ const PeopleRoot = styled.div`
   /* background-color: #ffffff; */
   display: flex;
   width: 100vw;
-  max-width: 100% ;
+  max-width: 100%;
   min-height: 43.7rem;
 `;
 
 const PeopleListContainer = styled.div`
-
   display: flex;
   justify-content: center;
   padding: 5% 5% 0 5%;
   max-height: 40rem;
-  flex: 1 ;
+  flex: 1;
 `;
 
 const PeopleDescriptionContainer = styled.div`
-max-width:100%;
+  max-width: 100%;
   display: flex;
   max-width: 100%;
   justify-content: center;
   height: 100%;
   padding: 0 5% 0 5%;
-
 `;
 const PeopleDescriptionHolder = styled.div`
   display: flex;
@@ -44,8 +42,8 @@ const PeopleDescriptionHolder = styled.div`
 
 const PeopleDescription = styled.div`
   color: #ffbe94;
-  font-size:  1.25em;
-  font-family: "Comic Sans MS" ;
+  font-size: 1.25em;
+  font-family: "Comic Sans MS";
   white-space: pre-line;
   word-wrap: break-word;
   border-width: 0 0 0 0.1em;
@@ -53,7 +51,15 @@ const PeopleDescription = styled.div`
   border-style: solid;
   padding: 1em;
   min-width: 10em;
-  overflow-y: auto ;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  &::-webkit-scrollbar-thumb {
+    opacity: 1;
+    background-color: #ffbe94;
+    max-height: 5em;
+  }
 `;
 
 const initialPeople = {
@@ -76,9 +82,8 @@ const exitPeople = {
 function People() {
   // snipet which finds a certain people object in the people array
   const [currentPeople, setCurrentPeople] = useState(
-    PeopleList[0
-      // PeopleList.findIndex((element: people) => element.name === "Arry Pottah")
-    ]
+    PeopleList[0]
+    // PeopleList.findIndex((element: people) => element.name === "Arry Pottah")
   );
 
   return (
