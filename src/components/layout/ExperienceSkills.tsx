@@ -15,7 +15,7 @@ const ExperienceSkillRoot = styled.div`
 const ExperienceSkillTitle = styled.div`
   display: flex;
   width: 100%;
-  min-width: 14.5em;
+  /* min-width: 14.5em; */
   justify-content: center;
   font-size: xx-large;
   font-weight: bold ;
@@ -25,6 +25,7 @@ const ExperienceCardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding: 1em 0 1em 0;
+  justify-content:center;
 `;
 
 function ExperienceSkills() {
