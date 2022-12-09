@@ -5,16 +5,16 @@ import { AboutProfile } from "../../data/AboutData";
 const AboutImageRoot = styled.div`
   display: flex;
   height: 37rem;
-  padding: 10% 10% 0 10% ;
+  padding: 10% 10% 0 10%;
   padding-top: 10%;
   justify-content: center;
-  max-width:100%;
+  max-width: 100%;
 `;
 
 const AboutImageContainer = styled.div`
   display: flex;
-  min-width: 30rem ;
-  max-width: 45rem;
+  min-width: 20rem;
+  width: 45rem;
   justify-content: center;
   background-color: black;
   color: #ffbe94;

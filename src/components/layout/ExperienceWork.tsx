@@ -15,7 +15,6 @@ const ExperienceWorkRoot = styled.div`
 const ExperienceWorkTitle = styled.div`
   display: flex;
   width: 100%;
-  /* min-width: 14.5em; */
   justify-content: center;
   font-size: xx-large;
   font-weight: bold ;
