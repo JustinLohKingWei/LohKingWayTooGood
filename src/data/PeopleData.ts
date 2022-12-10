@@ -1,11 +1,11 @@
 export type people = { name: string; description: string };
 
 export const PeopleList: people[] = [
-  // {
-  //   name: "Elaine",
-  //   description:
-  //     "One of my oldest friends dating way back to my high school days when I was but a fetus.There isn't much of my life that I can recall when Elaine was not a part of it.",
-  // },
+  {
+    name: "Elaine",
+    description:
+      "One of my oldest friends. Elaine and I have not physically seen each other for the better half of the past decade. Yet,there isn't much of my life that I can recall that Elaine has not been part of.\n\nI will never forget the way we became friends. We got in trouble one day for arguing with a prefect who was being rather pompous with the school rules. I ended up overdoing things and found myself at the disciplinary office later on. I caught an earful that day, yet I also gained a friend.\n\nAcross the years, she has seen me through all sorts of ups and downs as I slogged through adulthood, always presenting herself as the voice of empathy and encouragement, no matter the situation. Even as times slowly passed, and we both slowly grew away from the kids we once were, she still remained the kind, compassionate girl I had first befriended all those years ago; and she still never failed to see good in me, even at times when I couldn’t. \n\nI would end up receiving my iron ring with Elaine’s old watch firmly strapped to my wrist, and I am immensely grateful for her friendship and care across all these years. I move forward in life, blessed to know that I have my friend's support and encouragement in whatever I do, and hope I will one day be able to see my friend again.",
+  },
   {
     name: "Haw",
     description:
@@ -26,10 +26,6 @@ export const PeopleList: people[] = [
   // },
   // {
   //   name: "Team Epista",
-  //   description: "After our team split. Thank you for helping me grow.",
-  // },
-  // {
-  //   name: "James and Matt",
-  //   description: "James McCafferty and Matthew Dubious. Our stakeholders for the Epista Project",
+  //   description: "After our team split. Thank you for helping me grow. Members and James and Matt",
   // },
 ];
