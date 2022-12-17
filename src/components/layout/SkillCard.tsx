@@ -10,10 +10,14 @@ import {
   DiMongodb,
   DiDjango,
 } from "react-icons/di";
-import { SiCplusplus, SiNodedotjs, SiTypescript } from "react-icons/si";
+import { SiCplusplus, SiFlutter, SiNodedotjs, SiTypescript } from "react-icons/si";
 import { FaPencilRuler } from "react-icons/fa";
 import { AiFillStar } from "react-icons/ai";
 import { skill } from "../../data/ExperienceData";
+import { useContext } from "react";
+import { globalContextTypes, GlobalContext } from "../../App";
+import Modal from "./Modal";
+import SkillModal from "./SkillModal";
 const SkillCardRoot = styled.div`
   display: flex;
   flex-direction: column;
@@ -68,11 +72,27 @@ type SkillCardProps = {
 };
 
 function SkillCard({ skill }: SkillCardProps) {
+  const { setShowModal, setCurrentModal }: globalContextTypes =
+    useContext(GlobalContext);
+  const openModal = () => {
+    setShowModal(true);
+    setCurrentModal(
+      <Modal>
+        <SkillModal skill={skill} />
+      </Modal>
+    );
+  };
+
   const rating = Array.from({ length: skill.skillRating }, () => {
     return <AiFillStar size="1em" color="#ffbe94" />;
   });
+
   return (
-    <SkillCardRoot>
+    <SkillCardRoot
+      onClick={() => {
+        openModal();
+      }}
+    >
       <SkillCardLogoContainer>
         {skill.name === "JavaScript" ? (
           <DiJavascript1 size="4em" color="#ffbe94" />
@@ -125,6 +145,11 @@ function SkillCard({ skill }: SkillCardProps) {
         )}
         {skill.name === "MongoDB" ? (
           <DiMongodb size="4em" color="#ffbe94" />
+        ) : (
+          <></>
+        )}
+        {skill.name === "Flutter" ? (
+          <SiFlutter size="4em" color="#ffbe94" />
         ) : (
           <></>
         )}

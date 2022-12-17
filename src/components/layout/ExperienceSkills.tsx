@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 import { SkillData } from "../../data/ExperienceData";
 import SkillCard from "./SkillCard";
@@ -18,19 +19,22 @@ const ExperienceSkillTitle = styled.div`
   /* min-width: 14.5em; */
   justify-content: center;
   font-size: xx-large;
-  font-weight: bold ;
+  font-weight: bold;
 `;
 
 const ExperienceCardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding: 1em 0 1em 0;
-  justify-content:center;
+  justify-content: center;
 `;
 
 function ExperienceSkills() {
+
+
   return (
-    <ExperienceSkillRoot>
+    <ExperienceSkillRoot
+    >
       <ExperienceSkillTitle>Skills</ExperienceSkillTitle>
       <ExperienceCardContainer>
         {SkillData.map((data) => {
