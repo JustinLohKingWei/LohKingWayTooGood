@@ -40,6 +40,12 @@ export const SkillData: skill[] = [
         description:
           "A complete file server architecture consisting of the Node HttpC cilent application, a router, and the Httpfs server application",
       },
+      {
+        name: "Godzilla Enterprise Resource System Application",
+        link: "https://github.com/serum-390/soen390-team16-godzilla",
+        description:
+          "An ERP system for a bicycle manufacturing company with complete product and employee management.",
+      },
     ],
   },
   {
@@ -51,14 +57,14 @@ export const SkillData: skill[] = [
       {
         name: "LohKingWayTooGood.com",
         link: "https://lohkingwaytoogood.com",
-        description:
-          "My Personal Portfolio Website built in React Typescript.",
+        description: "My Personal Portfolio Website built in React Typescript.",
       },
 
       {
         name: "Better Todo-Todo",
         link: "https://github.com/JustinLohKingWei/Better-todotodo",
-        description: "My implementation of the TodoMVC Exercise using a react TS application",
+        description:
+          "My implementation of the TodoMVC Exercise using a react TS application",
       },
       {
         name: "Humble Bundle Scraper",
@@ -85,6 +91,31 @@ export const SkillData: skill[] = [
     description:
       "The better and more secure version of JavaScript, that is if you don't mind the extra syntax, and all the type errors during the development phase",
     skillRating: 5,
+    projectLinks: [
+      {
+        name: "LohKingWayTooGood.com",
+        link: "https://lohkingwaytoogood.com",
+        description: "My Personal Portfolio Website built in React Typescript.",
+      },
+      {
+        name: "Project Epista",
+        link: "https://github.com/atomata/capstone_WebClient",
+        description:
+          'A 3D Educational application featuring "Show & Tell" style presentations built as a React TS application with a unity-webgl layer.',
+      },
+      {
+        name: "Humble Bundle Scraper",
+        link: "https://github.com/humble-scraper/client",
+        description:
+          "A frontend application for Ethan's Web Scrapping services from the Humble Bundle Site.",
+      },
+      {
+        name: "Better Todo-Todo",
+        link: "https://github.com/JustinLohKingWei/Better-todotodo",
+        description:
+          "My implementation of the TodoMVC Exercise using a react TS application",
+      },
+    ],
   },
   {
     name: "Python",
@@ -106,7 +137,8 @@ export const SkillData: skill[] = [
       {
         name: "The greatest joke ever",
         link: "https://github.com/JustinLohKingWei/The-greatest-joke-ever",
-        description: "A python script made to send joke emails using SMTP as a prank for my friend haw",
+        description:
+          "A python script made to send joke emails using SMTP as a prank for my friend haw",
       },
       {
         name: "Sentimental Analysis",
@@ -122,11 +154,26 @@ export const SkillData: skill[] = [
       {
         name: "Chatbot for Course Related Questions",
         link: "https://github.com/VoltDriver/474Project",
-        description: "Chatbot for answering course related questions using knowledge graphs and rdflib, along with the rasa chatbot framework to",
+        description:
+          "Chatbot for answering course related questions using knowledge graphs and rdflib, along with the rasa chatbot framework to",
       },
     ],
   },
-  { name: "UI/UX Engineering", description: "I like this", skillRating: 5 },
+  {
+    name: "UI/UX Engineering",
+    description:
+      "Planning, Wireframing, prototyping and user-testing for the most optimal user friendly design is key in all my projects. I find joy in bridging the gap between developer intentions and user needs and thoughts, and believe it is the most important aspect in app design.",
+    skillRating: 5,
+
+    projectLinks: [
+      {
+        name: "Project Epista",
+        link: "https://github.com/atomata/capstone_WebClient",
+        description:
+          'A 3D Educational application featuring "Show & Tell" style presentations built as a React TS application with a unity-webgl layer.',
+      },
+    ],
+  },
   {
     name: "HTML",
     description: "Hyper text markup language. Used in conjunction with CSS.",
@@ -149,13 +196,28 @@ export const SkillData: skill[] = [
 
   {
     name: "Java",
-    description: "The first programming language I learned most of my programming concepts from including data structures, algorithmns, process threading.",
+    description:
+      "The first programming language I learned most of my programming concepts from including data structures, algorithmns, process threading.",
     skillRating: 3,
-    projectLinks: [{ name: "BattleShip", link: "", description: "Small Holliday Project to reproduce the iconic boardgame with my friend Haw" }],
+    projectLinks: [
+      {
+        name: "BattleShip",
+        link: "https://github.com/hawschiat/battleship-game",
+        description:
+          "Small Holliday Project to reproduce the iconic boardgame with my friend Haw",
+      },
+      {
+        name: "Smart Home System",
+        link: "https://github.com/Emperor42/soen343",
+        description:
+          "A smart home system made with javafx, which reads an input file and acts as a controller of different devices",
+      },
+    ],
   },
   {
     name: "C++",
-    description: "A programming language aimed more towards memory conservation. Basic knowledge and some Experience.",
+    description:
+      "A programming language aimed more towards memory conservation. Basic knowledge and some Experience.",
     skillRating: 2,
     projectLinks: [
       {
@@ -167,7 +229,7 @@ export const SkillData: skill[] = [
   },
   {
     name: "SQL",
-    description: "",
+    description: "Structured Query Language.",
     skillRating: 1,
   },
   {
@@ -178,13 +240,15 @@ export const SkillData: skill[] = [
       {
         name: "Node HttpC",
         link: "https://github.com/JustinLohKingWei/node-httpc",
-        description: "A Client Application ",
+        description:
+          "A Client Application built using the node js cli library to send http requests to a given endpoint. Part of a 3-stage client server architecture project. ",
       },
     ],
   },
   {
     name: "Django",
-    description: "A lightweight, simple method of setting up API endpoints for backend architecture.",
+    description:
+      "A lightweight, simple method of setting up API endpoints for backend architecture.",
     skillRating: 3,
   },
   {
@@ -194,7 +258,8 @@ export const SkillData: skill[] = [
   },
   {
     name: "Flutter",
-    description: "My preferred development library for mobile platforms in contrast to Android Studios.",
+    description:
+      "My preferred development library for mobile platforms in contrast to Android Studios.",
     skillRating: 2,
     projectLinks: [
       {
@@ -203,6 +268,11 @@ export const SkillData: skill[] = [
         description:
           "A mobile app which displays different time zones, and changes its background and theme accordingly",
       },
+      {
+        name: "Wild Sheep Chase",
+        link: "https://github.com/JustinLohKingWei/wild_sheep_chase",
+        description: "A flutter app made for ordering at one of my favorite cafes"
+      }
     ],
   },
 ];
