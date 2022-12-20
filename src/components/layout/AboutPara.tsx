@@ -10,7 +10,7 @@ const AboutParaRoot = styled.div`
 const AboutParaContainer = styled.div`
   display: flex;
   background-color: black;
-  color: #ffbe94;
+  color: ${props => props.theme.secondary};
   opacity: 0.9;
   max-height: 35rem;
   min-width: 15em;
@@ -32,7 +32,7 @@ const AboutParaHolder = styled.div`
   }
   &::-webkit-scrollbar-thumb {
     opacity: 1;
-    background-color: #ffbe94;
+    background-color: ${props => props.theme.secondary};
     max-height: 5em;
   }
 `;

@@ -41,13 +41,13 @@ const PeopleDescriptionHolder = styled.div`
 `;
 
 const PeopleDescription = styled.div`
-  color: #ffbe94;
+  color: ${props => props.theme.secondary};
   font-size: 1.25em;
   font-family: "Comic Sans MS";
   white-space: pre-line;
   word-wrap: break-word;
   border-width: 0 0 0 0.1em;
-  border-color: #ffbe94;
+  border-color: ${props => props.theme.secondary};
   border-style: solid;
   padding: 1em;
   min-width: 10em;
@@ -57,7 +57,7 @@ const PeopleDescription = styled.div`
   }
   &::-webkit-scrollbar-thumb {
     opacity: 1;
-    background-color: #ffbe94;
+    background-color: ${props => props.theme.secondary};
     max-height: 5em;
   }
 `;

@@ -6,7 +6,7 @@ const WorkCardRoot = styled.div`
   width: 60%;
   height: 5em;
   background-color: black;
-  color: #ffbe94;
+  color: ${props => props.theme.secondary};
   margin: 1em 0 1em 0;
   padding: 1em;
   border-radius: 1em;

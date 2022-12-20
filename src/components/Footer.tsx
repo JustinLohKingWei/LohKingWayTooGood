@@ -4,10 +4,10 @@ const FooterRoot = styled.div`
   display: flex;
   width: 100vw;
   justify-content: center;
-  color: #ffbe94;
+  /* color: ${props => props.theme.secondary} */
+  color : ${props => props.theme.secondary};
   flex-wrap: wrap ;
-  /* word-break: break-all ; */
-  background-color: #2d112a ;
+  background-color:${props => props.theme.main} ;
 `;
 
 function Footer() {

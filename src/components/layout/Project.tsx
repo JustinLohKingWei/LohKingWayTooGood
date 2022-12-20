@@ -28,7 +28,7 @@ const ProjectDescription = styled.div`
 const ProjectLink = styled.a`
  text-decoration: none;
  &:hover {
-    color: #ffbe94;
+    color: ${props => props.theme.secondary};
   }
 `
 

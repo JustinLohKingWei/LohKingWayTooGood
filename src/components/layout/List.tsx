@@ -10,7 +10,7 @@ const ListRoot = styled.div`
   display: flex;
   flex-direction: column;
   background-color: black;
-  color:#ffbe94;
+  color:${props => props.theme.secondary};
   opacity: 0.9;
   border-radius: 2em;
   min-width: 15em;

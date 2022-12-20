@@ -16,7 +16,7 @@ const AboutImageContainer = styled.div`
   width: 75%;
   justify-content: center;
   background-color: black;
-  color: #ffbe94;
+  color: ${props => props.theme.secondary};
   opacity: 0.9;
   max-height: 33em;
   border-radius: 2em;

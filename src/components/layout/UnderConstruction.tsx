@@ -12,7 +12,7 @@ const UnderConstructionContainer = styled.div`
   background-color: black;
   opacity: 0.9;
   padding:1em;
-  color: #ffbe94;
+  color: ${props => props.theme.secondary};
   font-size: 3em ;
 `;
 

@@ -12,10 +12,10 @@ const SkillModalRoot = styled.div`
   max-height: 90vh ;
   border-style:solid;
   border-width: 0.1em ;
-  border-color: #ffbe94 ;
+  border-color: ${props => props.theme.secondary} ;
   /* background-color: #2d112a; */
   background-color: #000000;
-  color: #ffbe94;
+  color: ${props => props.theme.secondary};
   flex-direction: column;
   align-items: center;
   padding-bottom: 0.5em;
@@ -50,7 +50,7 @@ const SkillModalCloseButton = styled.button`
   font-size: large;
   width: 10em;
   height: 2em;
-  background-color:  #ffbe94;
+  background-color:  ${props => props.theme.secondary};
   color:black;
   justify-content: center;
   align-items: center ;
@@ -58,7 +58,7 @@ const SkillModalCloseButton = styled.button`
   justify-self: self-end ;
   z-index:5;
   &:hover {
-    background-color: #f6aa78;
+    opacity:0.5;
   }
 `;
 

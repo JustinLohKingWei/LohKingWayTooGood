@@ -1,4 +1,6 @@
+import { useContext } from "react";
 import styled from "styled-components";
+import { GlobalContext, globalContextTypes } from "../App";
 import SplitScreen from "./layout/SplitScreen";
 import Navbar from "./Navbar";
 
@@ -21,6 +23,9 @@ const Title = styled.div`
   font-weight: bold;
   font-size: 6em;
   margin: 0.1em 0.1em 0.075em 0.1em;
+  &:hover {
+    color: #2d112a;
+  }
 `;
 
 const Subtitle = styled.div`
@@ -31,11 +36,12 @@ const Subtitle = styled.div`
 `;
 
 function Header() {
+  const { setContent }: globalContextTypes = useContext(GlobalContext);
   return (
     <HeaderRoot>
-      <SplitScreen leftWeight={1.5} rightWeight={1}>
+      <SplitScreen leftWeight={1} rightWeight={1}>
         <TitleContainer>
-          <Title>Justin Loh</Title>
+          <Title onClick={() => setContent("Home")}>Justin Loh</Title>
           <Subtitle>Software Engineer, FullStack Web Developer</Subtitle>
         </TitleContainer>
         <Navbar />

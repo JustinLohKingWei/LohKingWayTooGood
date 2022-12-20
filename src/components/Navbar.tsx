@@ -4,12 +4,13 @@ import { globalContextTypes, GlobalContext } from "../App";
 
 const NavbarRoot = styled.div`
   display: flex;
-  padding-top: 3em;
+  padding-top: 5em;
   width: 100%;
 `;
 
 const NavbarList = styled.div`
   display: flex;
+  width: 100%;
   min-height: 2.5em;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -22,8 +23,7 @@ const NavbarButton = styled.button`
   font-size: 2em;
   font-family: Montserrat;
   background: black;
-  /* border-color: #ffbe94; */
-  color: #ffbe94;
+  color: ${props => props.theme.secondary};
   opacity: 1;
   &:hover {
     background-color: #211e1e;

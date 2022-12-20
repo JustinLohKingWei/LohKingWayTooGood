@@ -50,7 +50,7 @@ const SkillCardNameHolder = styled.div`
   height: 100%;
   align-items: center;
   justify-content: center;
-  color: #ffbe94;
+  color: ${props => props.theme.secondary};
 `;
 const SkillCardRatingContainer = styled.div`
   display: block;
@@ -72,7 +72,10 @@ type SkillCardProps = {
 };
 
 function SkillCard({ skill }: SkillCardProps) {
-  const { setShowModal, setCurrentModal }: globalContextTypes =
+
+
+
+  const { setShowModal, setCurrentModal ,currentTheme}: globalContextTypes =
     useContext(GlobalContext);
   const openModal = () => {
     setShowModal(true);
@@ -82,9 +85,10 @@ function SkillCard({ skill }: SkillCardProps) {
       </Modal>
     );
   };
+ 
 
   const rating = Array.from({ length: skill.skillRating }, () => {
-    return <AiFillStar size="1em" color="#ffbe94" />;
+    return <AiFillStar size="1em" color={currentTheme.secondary} />;
   });
 
   return (
@@ -95,61 +99,61 @@ function SkillCard({ skill }: SkillCardProps) {
     >
       <SkillCardLogoContainer>
         {skill.name === "JavaScript" ? (
-          <DiJavascript1 size="4em" color="#ffbe94" />
+          <DiJavascript1 size="4em" color={currentTheme.secondary} />
         ) : (
           <></>
         )}
         {skill.name === "React" ? (
-          <DiReact size="4em" color="#ffbe94" />
+          <DiReact size="4em" color={currentTheme.secondary} />
         ) : (
           <></>
         )}
         {skill.name === "Python" ? (
-          <DiPython size="4em" color="#ffbe94" />
+          <DiPython size="4em" color={currentTheme.secondary} />
         ) : (
           <></>
         )}
         {skill.name === "TypeScript" ? (
-          <SiTypescript size="4em" color="#ffbe94" />
+          <SiTypescript size="4em" color={currentTheme.secondary} />
         ) : (
           <></>
         )}
-        {skill.name === "HTML" ? <DiHtml5 size="4em" color="#ffbe94" /> : <></>}
-        {skill.name === "CSS" ? <DiCss3 size="4em" color="#ffbe94" /> : <></>}
+        {skill.name === "HTML" ? <DiHtml5 size="4em" color={currentTheme.secondary} /> : <></>}
+        {skill.name === "CSS" ? <DiCss3 size="4em" color={currentTheme.secondary} /> : <></>}
         {skill.name === "UI/UX Engineering" ? (
-          <FaPencilRuler size="4em" color="#ffbe94" />
+          <FaPencilRuler size="4em" color={currentTheme.secondary} />
         ) : (
           <></>
         )}
 
-        {skill.name === "Java" ? <DiJava size="4em" color="#ffbe94" /> : <></>}
+        {skill.name === "Java" ? <DiJava size="4em" color={currentTheme.secondary} /> : <></>}
         {skill.name === "C++" ? (
-          <SiCplusplus size="4em" color="#ffbe94" />
+          <SiCplusplus size="4em" color={currentTheme.secondary} />
         ) : (
           <></>
         )}
         {skill.name === "SQL" ? (
-          <DiDatabase size="4em" color="#ffbe94" />
+          <DiDatabase size="4em" color={currentTheme.secondary} />
         ) : (
           <></>
         )}
         {skill.name === "Node JS" ? (
-          <SiNodedotjs size="4em" color="#ffbe94" />
+          <SiNodedotjs size="4em" color={currentTheme.secondary} />
         ) : (
           <></>
         )}
         {skill.name === "Django" ? (
-          <DiDjango size="4em" color="#ffbe94" />
+          <DiDjango size="4em" color={currentTheme.secondary} />
         ) : (
           <></>
         )}
         {skill.name === "MongoDB" ? (
-          <DiMongodb size="4em" color="#ffbe94" />
+          <DiMongodb size="4em" color={currentTheme.secondary}/>
         ) : (
           <></>
         )}
         {skill.name === "Flutter" ? (
-          <SiFlutter size="4em" color="#ffbe94" />
+          <SiFlutter size="4em" color={currentTheme.secondary} />
         ) : (
           <></>
         )}
