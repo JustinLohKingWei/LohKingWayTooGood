@@ -7,19 +7,20 @@ import Navbar from "./Navbar";
 const HeaderRoot = styled.div`
   z-index: 5;
   display: flex;
-  opacity: 70%;
   min-height: 9rem;
   flex-wrap: wrap;
   width: 100vw;
+  font-family: "futura-pt", Futura, sans-serif;
 `;
 const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
+  opacity: 0.8;
 `;
 
 const Title = styled.div`
   display: flex;
-  font-family: Montserrat, sans-serif;
+  /* font-family: Montserrat, sans-serif; */
   font-weight: bold;
   font-size: 6em;
   margin: 0.1em 0.1em 0.075em 0.1em;
@@ -30,7 +31,7 @@ const Title = styled.div`
 
 const Subtitle = styled.div`
   display: flex;
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-size: 2em;
   margin: 0.075em 0.5em 0 0.5em;
 `;

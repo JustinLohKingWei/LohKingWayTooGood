@@ -18,7 +18,7 @@ const SkillModalRoot = styled.div`
   color: ${props => props.theme.secondary};
   flex-direction: column;
   align-items: center;
-  padding-bottom: 0.5em;
+  padding: 1em;
   opacity: 1;
 `;
 
@@ -50,6 +50,7 @@ const SkillModalCloseButton = styled.button`
   font-size: large;
   width: 10em;
   height: 2em;
+  border-radius: 0.25em ;
   background-color:  ${props => props.theme.secondary};
   color:black;
   justify-content: center;

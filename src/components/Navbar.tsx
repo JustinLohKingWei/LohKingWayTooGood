@@ -16,26 +16,28 @@ const NavbarList = styled.div`
   flex-wrap: wrap;
 `;
 const NavbarButtonContainer = styled.div`
-  padding: 0.5em;
+  display: flex;
+  margin: 0.5em;
 `;
 
 const NavbarButton = styled.button`
+  padding: 0.2em;
+  border-radius: 0.25em;
   font-size: 2em;
   font-family: Montserrat;
-  background: black;
-  color: ${props => props.theme.secondary};
-  opacity: 1;
+  background: #000000;
+  color: ${(props) => props.theme.secondary};
   &:hover {
-    background-color: #211e1e;
+    opacity: 0.5;
   }
   &:focus {
-    color: #ffff94;;
-    background-color: #141212;
+    opacity: 0.75;
   }
 `;
 
 function Navbar() {
   const { setContent }: globalContextTypes = useContext(GlobalContext);
+
   return (
     <NavbarRoot>
       <NavbarList>

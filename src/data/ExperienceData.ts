@@ -127,12 +127,12 @@ export const SkillData: skill[] = [
         name: "dtest",
         link: "https://github.com/JustinLohKingWei/dtest",
         description:
-          "CLI application which is able conduct a diabetical test on some patient data based on their blood test results",
+          "Python CLI application which is able conduct a diabetical test on some patient data based on their blood test results",
       },
       {
         name: "httpfs",
         link: "https://github.com/JustinLohKingWei/httpfs",
-        description: "File Server",
+        description: "Python CLI application which spins up a file server on a designated port. Receives http requests, processes and serves up text files",
       },
       {
         name: "The greatest joke ever",
@@ -155,7 +155,7 @@ export const SkillData: skill[] = [
         name: "Chatbot for Course Related Questions",
         link: "https://github.com/VoltDriver/474Project",
         description:
-          "Chatbot for answering course related questions using knowledge graphs and rdflib, along with the rasa chatbot framework to",
+          "Chatbot for answering course related questions using knowledge graphs and rdflib, along with the rasa chatbot framework to.",
       },
     ],
   },
@@ -223,7 +223,7 @@ export const SkillData: skill[] = [
       {
         name: "Eight Minute Empire Board Game",
         link: "https://github.com/JustinLohKingWei/EightMinuteEmpireGame",
-        description: "A C++ game",
+        description: "A C++ fantasy board game with turn based mechanics. Features a player vs computer environment where both sides battle for control of a given map input",
       },
     ],
   },

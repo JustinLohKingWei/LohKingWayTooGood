@@ -22,8 +22,8 @@ const AboutParaContainer = styled.div`
 const AboutParaHolder = styled.div`
   display: flex;
   font-size: 1em;
+  font-family: 'Comic Sans MS';
   white-space: pre-line;
-  font-family: "Comic Sans MS";
   padding-bottom: 1em;
   overflow-y: scroll;
   min-width: 15em;

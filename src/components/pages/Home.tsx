@@ -28,7 +28,7 @@ const exitHome = {
 const Welcome = styled.div`
   display: flex;
   font-size: xx-large;
-  font-family: "Comic Sans MS";
+  font-family: 'Comic Sans MS';
   color: ${(props) => props.theme.secondary};
   margin-top: 2em;
   background-color: black;
