@@ -8,6 +8,7 @@ const SkillModalRoot = styled.div`
   display: flex;
   min-width: 25em;
   width: 50%;
+  max-width: 90% ;
   min-height: 3em;
   max-height: 90vh ;
   border-style:solid;

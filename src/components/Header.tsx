@@ -16,6 +16,9 @@ const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   opacity: 0.8;
+  &:hover {
+    color: #2d112a;
+  }
 `;
 
 const Title = styled.div`
@@ -24,9 +27,7 @@ const Title = styled.div`
   font-weight: bold;
   font-size: 6em;
   margin: 0.1em 0.1em 0.075em 0.1em;
-  &:hover {
-    color: #2d112a;
-  }
+
 `;
 
 const Subtitle = styled.div`
@@ -41,8 +42,8 @@ function Header() {
   return (
     <HeaderRoot>
       <SplitScreen leftWeight={1} rightWeight={1}>
-        <TitleContainer>
-          <Title onClick={() => setContent("Home")}>Justin Loh</Title>
+        <TitleContainer onClick={() => setContent("Home")}>
+          <Title>Justin Loh</Title>
           <Subtitle>Software Engineer, FullStack Web Developer</Subtitle>
         </TitleContainer>
         <Navbar />
