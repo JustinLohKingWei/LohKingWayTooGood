@@ -132,7 +132,8 @@ export const SkillData: skill[] = [
       {
         name: "httpfs",
         link: "https://github.com/JustinLohKingWei/httpfs",
-        description: "Python CLI application which spins up a file server on a designated port. Receives http requests, processes and serves up text files",
+        description:
+          "Python CLI application which spins up a file server on a designated port. Receives http requests, processes and serves up text files",
       },
       {
         name: "The greatest joke ever",
@@ -223,7 +224,8 @@ export const SkillData: skill[] = [
       {
         name: "Eight Minute Empire Board Game",
         link: "https://github.com/JustinLohKingWei/EightMinuteEmpireGame",
-        description: "A C++ fantasy board game with turn based mechanics. Features a player vs computer environment where both sides battle for control of a given map input",
+        description:
+          "A C++ fantasy board game with turn based mechanics. Features a player vs computer environment where both sides battle for control of a given map input",
       },
     ],
   },
@@ -243,6 +245,12 @@ export const SkillData: skill[] = [
         description:
           "A Client Application built using the node js cli library to send http requests to a given endpoint. Part of a 3-stage client server architecture project. ",
       },
+      {
+        name: "LohKingWayTooGood-Backend",
+        link: "https://github.com/JustinLohKingWei/LohKingWayTooGood-Backend",
+        description:
+          "Acting backend for the LohKingWayTooGood MERN application stack built with Express JS middleware",
+      },
     ],
   },
   {
@@ -253,8 +261,17 @@ export const SkillData: skill[] = [
   },
   {
     name: "MongoDB",
-    description: "Mongoboi",
+    description:
+      "A powerful database which stores objects using document models and schemas. I use Mongo Atlas clusters in conjuction with Express JS as a database",
     skillRating: 1,
+    projectLinks: [
+      {
+        name: "LohKingWayTooGood-Backend",
+        link: "https://github.com/JustinLohKingWei/LohKingWayTooGood-Backend",
+        description:
+          "Acting backend for the LohKingWayTooGood MERN application stack",
+      },
+    ],
   },
   {
     name: "Flutter",
@@ -271,8 +288,9 @@ export const SkillData: skill[] = [
       {
         name: "Wild Sheep Chase",
         link: "https://github.com/JustinLohKingWei/wild_sheep_chase",
-        description: "A flutter app made for ordering at one of my favorite cafes"
-      }
+        description:
+          "A flutter app made for ordering at one of my favorite cafes",
+      },
     ],
   },
 ];
