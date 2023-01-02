@@ -6,23 +6,26 @@ const WorkCardRoot = styled.div`
   width: 60%;
   height: 5em;
   background-color: black;
-  color: ${props => props.theme.secondary};
+  color: ${(props) => props.theme.secondary};
   margin: 1em 0 1em 0;
   padding: 1em;
   border-radius: 1em;
   flex-direction: column;
+  &:hover {
+    background-color: #171616;
+  }
 `;
 
 const WorkCardTitle = styled.div`
   width: 100%;
   font-size: x-large;
-  font-weight: bold ;
+  font-weight: bold;
 `;
 
 const WorkCardPosition = styled.div`
-    width:100%;
-    font-size: large;
-`
+  width: 100%;
+  font-size: large;
+`;
 
 type wordCardProps = {
   work: work;

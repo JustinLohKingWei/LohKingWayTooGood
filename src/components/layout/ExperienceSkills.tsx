@@ -1,7 +1,7 @@
-
 import styled from "styled-components";
 import { SkillData } from "../../data/ExperienceData";
 import SkillCard from "./SkillCard";
+import { motion } from "framer-motion";
 
 const ExperienceSkillRoot = styled.div`
   display: flex;
@@ -29,18 +29,43 @@ const ExperienceCardContainer = styled.div`
   justify-content: center;
 `;
 
+const skillContainerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const skillItemVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+  },
+};
+
 function ExperienceSkills() {
-
-
   return (
-    <ExperienceSkillRoot
-    >
+    <ExperienceSkillRoot>
       <ExperienceSkillTitle>Skills</ExperienceSkillTitle>
-      <ExperienceCardContainer>
-        {SkillData.map((data) => {
-          return <SkillCard skill={data}></SkillCard>;
-        })}
-      </ExperienceCardContainer>
+      <motion.div
+        variants={skillContainerVariants}
+        initial="hidden"
+        animate="show"
+      >
+        <ExperienceCardContainer>
+          {SkillData.map((data) => {
+            return (
+              <motion.div variants={skillItemVariants}>
+                <SkillCard skill={data}></SkillCard>
+              </motion.div>
+            );
+          })}
+        </ExperienceCardContainer>
+      </motion.div>
     </ExperienceSkillRoot>
   );
 }
