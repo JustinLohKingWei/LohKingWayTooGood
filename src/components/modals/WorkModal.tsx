@@ -34,13 +34,14 @@ const WorkPosition = styled.div`
 const WorkTagContainer = styled.div`
   display: flex;
   width: 98%;
+  flex-wrap: wrap;
 `;
 
 const WorkTagItem = styled.div`
   display: flex;
   background-color: ${(props) => props.theme.secondary};
   color: #000000;
-  margin: 0 0.5em 0 0.5em;
+  margin: 0.1em 0.5em 0.1em 0.5em;
   padding: 0.5em;
   border-radius: 0.5em;
 `;
