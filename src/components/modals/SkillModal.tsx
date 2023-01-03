@@ -2,21 +2,20 @@ import { useContext } from "react";
 import styled from "styled-components";
 import { GlobalContext, globalContextTypes } from "../../App";
 import { skill } from "../../data/ExperienceData";
-import Project from "./Project";
+import Project from "../layout/Project";
 
 const SkillModalRoot = styled.div`
   display: flex;
   min-width: 25em;
   width: 50%;
-  max-width: 90% ;
+  max-width: 90%;
   min-height: 3em;
-  max-height: 90vh ;
-  border-style:solid;
-  border-width: 0.1em ;
-  border-color: ${props => props.theme.secondary} ;
-  /* background-color: #2d112a; */
+  max-height: 90vh;
+  border-style: solid;
+  border-width: 0.1em;
+  border-color: ${(props) => props.theme.secondary};
   background-color: #000000;
-  color: ${props => props.theme.secondary};
+  color: ${(props) => props.theme.secondary};
   flex-direction: column;
   align-items: center;
   padding: 1em;
@@ -28,7 +27,7 @@ const SkillModalTitle = styled.div`
   width: 100%;
   font-size: x-large;
   justify-content: center;
-  padding: 1em 0 1em 0 ;
+  padding: 1em 0 1em 0;
 `;
 const SkillModalDescription = styled.div`
   display: flex;
@@ -42,8 +41,8 @@ const ProjectContainer = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
-  max-width: 100% ;
-  overflow-y: auto ;
+  max-width: 100%;
+  overflow-y: auto;
 `;
 
 const SkillModalCloseButton = styled.button`
@@ -51,16 +50,16 @@ const SkillModalCloseButton = styled.button`
   font-size: large;
   width: 10em;
   height: 2em;
-  border-radius: 0.25em ;
-  background-color:  ${props => props.theme.secondary};
-  color:black;
+  border-radius: 0.25em;
+  background-color: ${(props) => props.theme.secondary};
+  color: black;
   justify-content: center;
-  align-items: center ;
+  align-items: center;
   align-self: flex-end;
-  justify-self: self-end ;
-  z-index:5;
+  justify-self: self-end;
+  z-index: 5;
   &:hover {
-    opacity:0.5;
+    opacity: 0.5;
   }
 `;
 

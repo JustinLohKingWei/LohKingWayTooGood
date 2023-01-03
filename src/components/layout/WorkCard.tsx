@@ -1,5 +1,9 @@
+import { useContext } from "react";
 import styled from "styled-components";
+import { globalContextTypes, GlobalContext } from "../../App";
 import { work } from "../../data/ExperienceData";
+import Modal from "../modals/Modal";
+import WorkModal from "../modals/WorkModal";
 
 const WorkCardRoot = styled.div`
   display: flex;
@@ -32,12 +36,28 @@ type wordCardProps = {
 };
 
 function WorkCard({ work }: wordCardProps) {
+  const { setShowModal, setCurrentModal }: globalContextTypes =
+    useContext(GlobalContext);
+  const openModal = () => {
+    if(work.description!==undefined){
+    setShowModal(true);
+    setCurrentModal(
+      <Modal>
+        <WorkModal work={work} />
+      </Modal>
+    );
+  } 
+  };
+
   return (
-    <WorkCardRoot>
+    <WorkCardRoot
+      onClick={() => {
+        openModal();
+      }}
+    >
       <WorkCardTitle>{work.name}</WorkCardTitle>
       <WorkCardPosition>{work.position}</WorkCardPosition>
     </WorkCardRoot>
   );
 }
-
 export default WorkCard;

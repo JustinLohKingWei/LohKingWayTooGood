@@ -10,14 +10,19 @@ import {
   DiMongodb,
   DiDjango,
 } from "react-icons/di";
-import { SiCplusplus, SiFlutter, SiNodedotjs, SiTypescript } from "react-icons/si";
+import {
+  SiCplusplus,
+  SiFlutter,
+  SiNodedotjs,
+  SiTypescript,
+} from "react-icons/si";
 import { FaPencilRuler } from "react-icons/fa";
 import { AiFillStar } from "react-icons/ai";
 import { skill } from "../../data/ExperienceData";
 import { useContext } from "react";
 import { globalContextTypes, GlobalContext } from "../../App";
-import Modal from "./Modal";
-import SkillModal from "./SkillModal";
+import Modal from "../modals/Modal";
+import SkillModal from "../modals/SkillModal";
 const SkillCardRoot = styled.div`
   display: flex;
   flex-direction: column;
@@ -50,7 +55,7 @@ const SkillCardNameHolder = styled.div`
   height: 100%;
   align-items: center;
   justify-content: center;
-  color: ${props => props.theme.secondary};
+  color: ${(props) => props.theme.secondary};
 `;
 const SkillCardRatingContainer = styled.div`
   display: block;
@@ -72,10 +77,7 @@ type SkillCardProps = {
 };
 
 function SkillCard({ skill }: SkillCardProps) {
-
-
-
-  const { setShowModal, setCurrentModal ,currentTheme}: globalContextTypes =
+  const { setShowModal, setCurrentModal, currentTheme }: globalContextTypes =
     useContext(GlobalContext);
   const openModal = () => {
     setShowModal(true);
@@ -85,7 +87,6 @@ function SkillCard({ skill }: SkillCardProps) {
       </Modal>
     );
   };
- 
 
   const rating = Array.from({ length: skill.skillRating }, () => {
     return <AiFillStar size="1em" color={currentTheme.secondary} />;
@@ -118,15 +119,27 @@ function SkillCard({ skill }: SkillCardProps) {
         ) : (
           <></>
         )}
-        {skill.name === "HTML" ? <DiHtml5 size="4em" color={currentTheme.secondary} /> : <></>}
-        {skill.name === "CSS" ? <DiCss3 size="4em" color={currentTheme.secondary} /> : <></>}
+        {skill.name === "HTML" ? (
+          <DiHtml5 size="4em" color={currentTheme.secondary} />
+        ) : (
+          <></>
+        )}
+        {skill.name === "CSS" ? (
+          <DiCss3 size="4em" color={currentTheme.secondary} />
+        ) : (
+          <></>
+        )}
         {skill.name === "UI/UX Engineering" ? (
           <FaPencilRuler size="4em" color={currentTheme.secondary} />
         ) : (
           <></>
         )}
 
-        {skill.name === "Java" ? <DiJava size="4em" color={currentTheme.secondary} /> : <></>}
+        {skill.name === "Java" ? (
+          <DiJava size="4em" color={currentTheme.secondary} />
+        ) : (
+          <></>
+        )}
         {skill.name === "C++" ? (
           <SiCplusplus size="4em" color={currentTheme.secondary} />
         ) : (
@@ -148,7 +161,7 @@ function SkillCard({ skill }: SkillCardProps) {
           <></>
         )}
         {skill.name === "MongoDB" ? (
-          <DiMongodb size="4em" color={currentTheme.secondary}/>
+          <DiMongodb size="4em" color={currentTheme.secondary} />
         ) : (
           <></>
         )}

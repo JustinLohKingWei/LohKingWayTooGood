@@ -1,10 +1,18 @@
 export type work = {
   name: string;
   position: string;
+  relatedTags?: string[];
+  description?: string;
 };
 
 export const WorkData: work[] = [
-  { name: "Atomata", position: "Software Developer (React TS)" },
+  {
+    name: "Atomata",
+    position: "Software Developer (React TS)",
+    relatedTags: ["React","TypeScript","MUI","Node","UI/UX Design","Agile","Scrum"],
+    description:
+      'A Contract Based Employment by Atomata, a startup company founded by James MCcafferty and Matthieu Dubois.\n\n Atomata\'s vision was that of Project Epista, a web based 3D learning application with a "Show & Tell" style of presentation.',
+  },
   { name: "Majesthe", position: "Supervisor" },
 ];
 
@@ -236,8 +244,9 @@ export const SkillData: skill[] = [
   },
   {
     name: "Node JS",
-    description: "Javascript Runtime Environment I have occasionally used.",
-    skillRating: 1,
+    description:
+      "Javascript Runtime Environment I have occasionally used. My experience in Node JS primarily comes in the use of the Express JS framework to set up REST APIs for backend servers to communicate with databases such as MongoDB, or the occasional use of writing CLI for functional tasks.",
+    skillRating: 2,
     projectLinks: [
       {
         name: "Node HttpC",

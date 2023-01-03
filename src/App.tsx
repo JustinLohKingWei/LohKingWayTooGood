@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Content from "./components/Content";
 import styled, { ThemeProvider } from "styled-components";
 import React, { createContext, useState } from "react";
-import Modal from "./components/layout/Modal";
+import Modal from "./components/modals/Modal";
 import { theme, themeList } from "./themes";
 
 const RootContainer = styled.div`
