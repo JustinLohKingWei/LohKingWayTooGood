@@ -4,7 +4,6 @@ import {
   DiPython,
   DiReact,
   DiJava,
-  DiHtml5,
   DiCss3,
   DiDatabase,
   DiMongodb,
