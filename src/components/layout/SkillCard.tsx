@@ -119,12 +119,7 @@ function SkillCard({ skill }: SkillCardProps) {
         ) : (
           <></>
         )}
-        {skill.name === "HTML" ? (
-          <DiHtml5 size="4em" color={currentTheme.secondary} />
-        ) : (
-          <></>
-        )}
-        {skill.name === "CSS" ? (
+        {skill.name === "HTML/CSS" ? (
           <DiCss3 size="4em" color={currentTheme.secondary} />
         ) : (
           <></>

@@ -26,8 +26,6 @@ const WorkPosition = styled.div`
   display: flex;
   width: 98%;
   font-size: xx-large;
-  /* background-color: ${(props) => props.theme.secondary};
-  color: #000000; */
   padding: 0.5em;
 `;
 
@@ -51,7 +49,16 @@ const WorkDescription = styled.div`
   width: 98%;
   white-space: pre-line;
   background-color: #171617;
-  padding: 0.5em;
+  padding: 1em;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  &::-webkit-scrollbar-thumb {
+    opacity: 1;
+    background-color: ${(props) => props.theme.secondary};
+    max-height: 5em;
+  }
 `;
 
 const WorkModalCloseButton = styled.button`

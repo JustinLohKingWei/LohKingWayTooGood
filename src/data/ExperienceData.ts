@@ -8,10 +8,18 @@ export type work = {
 export const WorkData: work[] = [
   {
     name: "Atomata",
-    position: "Software Developer (React TS)",
-    relatedTags: ["React","TypeScript","MUI","Node","UI/UX Design","Agile","Scrum"],
+    position: "Software Engineer",
+    relatedTags: [
+      "React",
+      "TypeScript",
+      "MUI",
+      "Node",
+      "UI/UX Design",
+      "Agile",
+      "Scrum",
+    ],
     description:
-      'A Contract Based Employment by Atomata, a startup company founded by James MCcafferty and Matthieu Dubois.\n\n Atomata\'s vision was that of Project Epista, a web based 3D learning application with a "Show & Tell" style of presentation.',
+      'Atomata, a startup company founded by unity developers James McCafferty and Matthieu Dubois with the vision of Project Epista, a way of showcasing their highly detailed 3D models using a web based learning application with a "Show & Tell" style of presentation. \n\n The project got off to a rough start. Half of the initial 9 man team decided to pursue other interests and stepped down from the project, leaving behind a 5 man team with limited knowledge of web application development and the integration of the unity models.\n\n The remaining 8 month sprint would become one of the most challenging times for the remaining members of the project. Each of the 3 month sprint cycle felt like a mad race to deliver major features using foreign frameworks, while also completing extensive documentation tasks.\n\n Yet, the team morale soared like never before. We gave each other mentoring sessions, and surprised each other with birthday celebrations. We cheered and laughed togther, but also cried and griped together. The daily standups eventually grew into a routine and at all times everyone knew how the entire application worked, and which member had the best knowledges of each specific aspect. \n\nWe felt indestructible, and the results of our project certainly proved our worth to our stakeholders.',
   },
   { name: "Majesthe", position: "Supervisor" },
 ];
@@ -184,14 +192,9 @@ export const SkillData: skill[] = [
     ],
   },
   {
-    name: "HTML",
-    description: "Hyper text markup language. Used in conjunction with CSS.",
-    skillRating: 5,
-  },
-  {
-    name: "CSS",
+    name: "HTML/CSS",
     description:
-      "The styling sheets used for defining layouts, colors, events and animations in web applications. Primarily used in React Projects.",
+      "Cascading Styled Sheets is used for defining layouts, colors, events and animations in web applications, and is commonly used in conjuction with HTML, or Hyper text markup language. As a web developer, I use HTML and CSS in every Frontend project such as React.\n\n My preffered styling API is the styled components library, yet I sometimes resort to using classic HTML/CSS modules if the project requires me to do so.",
     skillRating: 5,
     projectLinks: [
       {
@@ -224,29 +227,10 @@ export const SkillData: skill[] = [
     ],
   },
   {
-    name: "C++",
-    description:
-      "A programming language aimed more towards memory conservation. Basic knowledge and some Experience.",
-    skillRating: 2,
-    projectLinks: [
-      {
-        name: "Eight Minute Empire Board Game",
-        link: "https://github.com/JustinLohKingWei/EightMinuteEmpireGame",
-        description:
-          "A C++ fantasy board game with turn based mechanics. Features a player vs computer environment where both sides battle for control of a given map input",
-      },
-    ],
-  },
-  {
-    name: "SQL",
-    description: "Structured Query Language.",
-    skillRating: 1,
-  },
-  {
     name: "Node JS",
     description:
       "Javascript Runtime Environment I have occasionally used. My experience in Node JS primarily comes in the use of the Express JS framework to set up REST APIs for backend servers to communicate with databases such as MongoDB, or the occasional use of writing CLI for functional tasks.",
-    skillRating: 2,
+    skillRating: 3,
     projectLinks: [
       {
         name: "Node HttpC",
@@ -263,16 +247,10 @@ export const SkillData: skill[] = [
     ],
   },
   {
-    name: "Django",
-    description:
-      "A lightweight, simple method of setting up API endpoints for backend architecture.",
-    skillRating: 3,
-  },
-  {
     name: "MongoDB",
     description:
       "A powerful database which stores objects using document models and schemas. I use Mongo Atlas clusters in conjuction with Express JS as a database",
-    skillRating: 1,
+    skillRating: 2,
     projectLinks: [
       {
         name: "LohKingWayTooGood-Backend",
@@ -282,6 +260,28 @@ export const SkillData: skill[] = [
       },
     ],
   },
+  {
+    name: "Django",
+    description:
+      "A lightweight, simple method of setting up API endpoints for backend architecture.",
+    skillRating: 2,
+  },
+
+  {
+    name: "C++",
+    description:
+      "A programming language aimed more towards memory conservation. Basic knowledge and some Experience.",
+    skillRating: 2,
+    projectLinks: [
+      {
+        name: "Eight Minute Empire Board Game",
+        link: "https://github.com/JustinLohKingWei/EightMinuteEmpireGame",
+        description:
+          "A C++ fantasy board game with turn based mechanics. Features a player vs computer environment where both sides battle for control of a given map input",
+      },
+    ],
+  },
+
   {
     name: "Flutter",
     description:
@@ -301,5 +301,10 @@ export const SkillData: skill[] = [
           "A flutter app made for ordering at one of my favorite cafes",
       },
     ],
+  },
+  {
+    name: "SQL",
+    description: "Structured Query Language. Some experience in this.",
+    skillRating: 1,
   },
 ];

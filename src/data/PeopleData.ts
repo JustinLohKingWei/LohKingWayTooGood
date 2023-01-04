@@ -13,7 +13,7 @@ export const PeopleList: people[] = [
   },
   // {
   //   name: "Ethan",
-  //   description: "A role model and somebody to look up to.",
+  //   description: "I can wholeheartedly say I would not be the person I am without Ethan.\n\n A coding prodigy, Ethan was considered a prodigy amongst those he worked with. There was no issue he couldnt solve, and he did so quicker and more efficient that the other guy.",
   // },
   {
     name: "Tashfia",
