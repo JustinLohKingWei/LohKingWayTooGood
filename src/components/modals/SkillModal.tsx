@@ -35,6 +35,7 @@ const SkillModalDescription = styled.div`
   flex-wrap: wrap;
   font-size: large;
   margin: 1.5em 0 1.5em 0;
+  white-space: pre-line;
 `;
 
 const ProjectContainer = styled.div`
