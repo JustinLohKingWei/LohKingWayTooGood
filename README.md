@@ -11,7 +11,7 @@ The application features responsive mobile screen sizing, simple framer motion a
 ## Included Packages, Libraries, Configurations
 
 - [ ] Ant Design
-- [ ] Axios
+- [X] Axios
 - [ ] BootStrap
 - [X] Framer-Motion
 - [ ] Material UI

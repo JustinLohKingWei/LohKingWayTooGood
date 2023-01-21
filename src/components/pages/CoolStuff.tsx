@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import UnderConstruction from "../layout/UnderConstruction";
+import ServerBoard from "../layout/ServerBoard";
 
 const CoolStuffRoot = styled.div`
   display: flex;
   width: 100vw;
   min-height: 100%;
+  justify-content:center;
 `;
 
 const initialCoolStuff = {
@@ -33,7 +34,7 @@ function CoolStuff() {
       transition={transitionCoolStuff}
       exit={exitCoolStuff}
     >
-      <CoolStuffRoot><UnderConstruction/></CoolStuffRoot>
+      <CoolStuffRoot><ServerBoard/></CoolStuffRoot>
     </motion.div>
   );
 }
