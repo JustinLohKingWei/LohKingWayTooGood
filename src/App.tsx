@@ -6,11 +6,13 @@ import styled, { ThemeProvider } from "styled-components";
 import React, { createContext, useState } from "react";
 import Modal from "./components/modals/Modal";
 import { theme, themeList } from "./themes";
+import ParticleBackground from "./components/particles/ParticleBackground";
 
 const RootContainer = styled.div`
   display: flex;
-  background: ${(props) => props.theme.main} url(${(props) => props.theme.wallpaper}) no-repeat left
-    top;
+  /* background: ${(props) => props.theme.main} url(${(props) =>
+    props.theme.wallpaper}) no-repeat left
+    top; */
   flex-direction: column;
   flex-wrap: wrap;
   min-height: 100vh;
@@ -53,11 +55,13 @@ function App() {
     setCurrentTheme,
   };
 
+
   return (
     <GlobalContext.Provider value={globalContextValues}>
       <ThemeProvider theme={currentTheme}>
         <RootContainer>
-        {showModal ? currentModal : <></>}
+          <ParticleBackground />
+          {showModal ? currentModal : <></>}
           <FlexContainer>
             <Header />
           </FlexContainer>
@@ -74,3 +78,4 @@ function App() {
 }
 
 export default App;
+
