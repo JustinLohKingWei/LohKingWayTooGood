@@ -16,8 +16,9 @@ const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   opacity: 0.8;
+  color : ${props => props.theme.secondary};
   &:hover {
-    color: #2d112a;
+    color: #c3c0c3;
   }
 `;
 
