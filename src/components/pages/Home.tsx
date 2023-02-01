@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import useDate from "../../hooks/useDate";
 import ThemeChanger from "../layout/ThemeChanger";
 
 const HomeRoot = styled.div`
@@ -28,7 +29,7 @@ const exitHome = {
 const Welcome = styled.div`
   display: flex;
   font-size: xx-large;
-  font-family: 'Comic Sans MS';
+  font-family: "Comic Sans MS";
   color: ${(props) => props.theme.secondary};
   margin-top: 2em;
   background-color: black;
@@ -55,6 +56,8 @@ const transtionThemeHolder = { duration: 1.5 };
 const exitThemeHolder = { opacity: 0 };
 
 function Home() {
+  const { hours, seconds} = useDate();
+
   return (
     <motion.div
       initial={initialHome}
@@ -70,11 +73,12 @@ function Home() {
           exit={exitWelcome}
         >
           <Welcome>
-            Being alive is making choices. Between love and hate, between
+            <>{seconds}</>
+            {/* Being alive is making choices. Between love and hate, between
             holding out your hand or closing it as a fist....
             <br />
             You have to accept the world as it is.....or fight to change it.
-            <br />- Carl Manfred
+            <br />- Carl Manfred  */}
           </Welcome>
         </motion.div>
         <motion.div

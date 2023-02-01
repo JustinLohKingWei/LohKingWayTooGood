@@ -11,21 +11,21 @@ export type theme = {
 };
 
 const theme1: theme = {
-  name: "Day",
+  name: "Starry",
   wallpaper: day,
   main: "#2E112D", //dark
   secondary: "#ffbe94", // light
 };
 
 const theme2: theme = {
-  name: "Dawn",
+  name: "Rainy",
   wallpaper :dawn,
   main: "#010705",
   secondary: "#DFDEFE",
 };
 
 const theme3: theme = {
-  name: "Night",
+  name: "Snowy",
   wallpaper: night,
   main: "#090D19",
   secondary: "#FFFCC9",

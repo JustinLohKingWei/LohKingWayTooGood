@@ -1,0 +1,12 @@
+.gradient0 {
+  background: #00000c;
+}
+.gradient1 {
+  background: linear-gradient(to bottom, #020111 85%, #191621 100%);
+}
+.gradient2 {
+  background: linear-gradient(to bottom, #020111 60%, #20202c 100%);
+}
+.gradient3 {
+  background: linear-gradient(to bottom, #020111 10%, #3a3a52 100%);
+}

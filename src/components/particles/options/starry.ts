@@ -1,4 +1,4 @@
-export const starryoption = {
+export const starryOption = {
   detectRetina: false,
   fpsLimit: 30,
   interactivity: {
