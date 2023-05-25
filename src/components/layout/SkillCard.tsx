@@ -16,7 +16,6 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { FaPencilRuler } from "react-icons/fa";
-import { AiFillStar } from "react-icons/ai";
 import { skill } from "../../data/ExperienceData";
 import { useContext } from "react";
 import { globalContextTypes, GlobalContext } from "../../App";
