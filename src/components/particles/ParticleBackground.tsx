@@ -1,6 +1,8 @@
 // @ts-nocheck
 
 import Particles from "react-tsparticles";
+import { tsParticles } from "tsparticles-engine";
+import { loadPolygonMaskPlugin } from "tsparticles-plugin-polygon-mask";
 import styled from "styled-components";
 import { starryOption } from "./options/starry";
 import { loadFull } from "tsparticles";
@@ -30,11 +32,13 @@ const ParticleRoot = styled.div`
 function ParticleBackground() {
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
+
+    await loadPolygonMaskPlugin(tsParticles);
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {}, []);
 
-  const optionList = [starryOption, rainyOption, snowyOption];
+  const optionList = [starryOption, rainyOption, googleOption];
 
   const { currentTheme }: globalContextTypes = useContext(GlobalContext);
 

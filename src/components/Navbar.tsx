@@ -25,7 +25,7 @@ const NavbarButton = styled.button`
   border-radius: 0.25em;
   font-size: 2em;
   font-family: Montserrat;
-  background: #000000;
+  background: #7c1717;
   color: ${(props) => props.theme.secondary};
   &:hover {
     opacity: 0.5;
