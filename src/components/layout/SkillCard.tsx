@@ -26,7 +26,7 @@ const SkillCardRoot = styled.div`
   display: flex;
   flex-direction: column;
   width: 10em;
-  height: 10em;
+  height: 9.75em;
   background-color: black;
   opacity: 0.9;
   color: white;
@@ -45,7 +45,7 @@ const SkillCardLogoContainer = styled.div`
 const SkillCardNameContainer = styled.div`
   display: block;
   width: 100%;
-  height: 2em;
+  height: 2.5em;
 `;
 
 const SkillCardNameHolder = styled.div`
@@ -55,20 +55,7 @@ const SkillCardNameHolder = styled.div`
   align-items: center;
   justify-content: center;
   color: ${(props) => props.theme.secondary};
-`;
-const SkillCardRatingContainer = styled.div`
-  display: block;
-  width: 100%;
-  height: 2em;
-`;
-
-const SkillCardRatingHolder = styled.div`
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  font-size: 1.025em;
 `;
 
 type SkillCardProps = {
@@ -86,10 +73,6 @@ function SkillCard({ skill }: SkillCardProps) {
       </Modal>
     );
   };
-
-  const rating = Array.from({ length: skill.skillRating }, () => {
-    return <AiFillStar size="1em" color={currentTheme.secondary} />;
-  });
 
   return (
     <SkillCardRoot
@@ -168,9 +151,6 @@ function SkillCard({ skill }: SkillCardProps) {
       <SkillCardNameContainer>
         <SkillCardNameHolder>{skill.name}</SkillCardNameHolder>
       </SkillCardNameContainer>
-      <SkillCardRatingContainer>
-        <SkillCardRatingHolder>{rating}</SkillCardRatingHolder>
-      </SkillCardRatingContainer>
     </SkillCardRoot>
   );
 }
